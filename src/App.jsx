@@ -24,47 +24,37 @@ function App() {
         />
         {/* 3 button vàng gold */}
         <div
-          className="flex flex-col items-center w-full mt-4 sm:mt-0 sm:absolute sm:left-[67%] sm:-translate-x-1/2 sm:bottom-[20%] sm:flex-col sm:items-center sm:z-[2]"
+          className="flex flex-col items-center w-full mt-4 sm:mt-0 sm:absolute sm:left-[67%] sm:-translate-x-1/2 sm:bottom-[15%] sm:flex-col sm:items-center sm:z-[2]"
         >
           <div className="flex flex-col gap-4 w-full px-4 sm:flex-row sm:gap-12 sm:w-auto sm:px-0">
-            <a
-              href="https://zalo.me/2516594959299658555" // Link BigC
-              className="px-10 py-4 h-[90px] min-w-[120px] text-center bg-gradient-to-r from-[#ffe082] to-[#f7c948] text-[#7a4f01] font-bold text-xl border-none rounded-[5px] shadow-[0_4px_16px_0_rgba(247,201,72,0.25)] cursor-pointer no-underline transition-colors duration-300 outline-none flex flex-col items-center justify-center hover:bg-gradient-to-r hover:from-[#ffd54f] hover:to-[#f7b801]"
-            >
-              BigC
-              <div
-                className="mt-2 inline-block bg-[#315bb7] text-white rounded-[5px] px-3 py-0.1 text-[0.5rem] font-medium tracking-wide whitespace-nowrap"
-              >
-                Tham gia ngay
+            {/* BigC button */}
+            <div className="relative bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-full max-w-[220px] min-h-[120px] flex flex-col items-center justify-end pb-8 pt-8 px-6 mx-auto">
+              {/* Label */}
+              <div className="w-full flex justify-start items-center h-8 mb-2">
+                <div className="bg-gradient-to-r from-[#ffe082] to-[#f7c948] text-[#222] font-bold px-4 py-1 rounded-tl-lg rounded-br-lg text-sm shadow h-8 flex items-center">BigC</div>
               </div>
-            </a>
-            <a
-              href="https://zalo.me/2516594959299658555" // Link Co.op
-              className="px-10 py-4 h-[90px] min-w-[120px] text-center bg-gradient-to-r from-[#ffe082] to-[#f7c948] text-[#7a4f01] font-bold text-xl border-none rounded-[5px] shadow-[0_4px_16px_0_rgba(247,201,72,0.25)] cursor-pointer no-underline transition-colors duration-300 outline-none flex flex-col items-center justify-center hover:bg-gradient-to-r hover:from-[#ffd54f] hover:to-[#f7b801]"
-            >
-              Co.op
-              <div
-                className="mt-2 inline-block bg-[#315bb7] text-white rounded-[5px] px-3 py-0.1 text-[0.5rem] font-medium tracking-wide whitespace-nowrap"
-              >
-                Tham gia ngay
+              {/* Content */}
+              <button className="bg-[#315bb7] text-white rounded-[5px] px-4 py-2 text-sm font-semibold tracking-wide shadow hover:bg-[#244a99] transition">Tham gia ngay</button>
+            </div>
+            {/* Co.op button */}
+            <div className="relative bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-full max-w-[220px] min-h-[120px] flex flex-col items-center justify-end pb-8 pt-8 px-6 mx-auto">
+              <div className="w-full flex justify-start items-center h-8 mb-2">
+                <div className="bg-gradient-to-r from-[#ffe082] to-[#f7c948] text-[#222] font-bold px-4 py-1 rounded-tl-lg rounded-br-lg text-sm shadow h-8 flex items-center">Co.op</div>
               </div>
-            </a>
-            <a
-              href="https://zalo.me/2516594959299658555" // Link GT
-              className="px-10 py-4 h-[90px] min-w-[120px] text-center bg-gradient-to-r from-[#ffe082] to-[#f7c948] text-[#7a4f01] font-bold text-xl border-none rounded-[5px] shadow-[0_4px_16px_0_rgba(247,201,72,0.25)] cursor-pointer no-underline transition-colors duration-300 outline-none flex flex-col items-center justify-center hover:bg-gradient-to-r hover:from-[#ffd54f] hover:to-[#f7b801]"
-            >
-              GT
-              <div
-                className="mt-2 inline-block bg-[#315bb7] text-white rounded-[5px] px-3 py-0.1 text-[0.5rem] font-medium tracking-wide whitespace-nowrap"
-              >
-                Tham gia ngay
+              <button className="bg-[#315bb7] text-white rounded-[5px] px-4 py-2 text-sm font-semibold tracking-wide shadow hover:bg-[#244a99] transition">Tham gia ngay</button>
+            </div>
+            {/* GT button */}
+            <div className="relative bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-full max-w-[220px] min-h-[120px] flex flex-col items-center justify-end pb-8 pt-8 px-6 mx-auto">
+              <div className="w-full flex justify-start items-center h-8 mb-2">
+                <div className="bg-gradient-to-r from-[#ffe082] to-[#f7c948] text-[#222] font-bold px-4 py-1 rounded-tl-lg rounded-br-lg text-sm shadow h-8 flex items-center">GT</div>
               </div>
-            </a>
+              <button className="bg-[#315bb7] text-white rounded-[5px] px-4 py-2 text-sm font-semibold tracking-wide shadow hover:bg-[#244a99] transition">Tham gia ngay</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  )
+  ) 
 }
 
 export default App
