@@ -53,7 +53,7 @@ function App() {
         />
         {/* Table 3 ô logo - MOBILE */}
         <div className="relative w-full flex justify-center sm:absolute sm:left-[67%] sm:-translate-x-1/2 sm:bottom-[15%] sm:z-10 sm:mt-0">
-          <table className="block sm:hidden bg-transparent border-separate border-spacing-4 mt-72 sm:mt-0">
+          <table className="block sm:hidden bg-transparent border-separate border-spacing-4 mt-80 sm:mt-0">
             <tbody>
               <tr>
                 <td colSpan="3" className="pb-2 text-center">
