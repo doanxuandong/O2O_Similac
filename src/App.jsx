@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import bgr from './Images/KV_Promotion_Vulan.png'
+import bgr from './Images/KV_Promotion_Vulan_3.png'
 import bgrMobile from './Images/KV_Promotion_Vulan_2.jpg'
-import bigcLogo from './Images/bigc.jpg'
+import bgrMobileJpg from './Images/bgrmobile.jpg'
+import bigcLogo from './Images/bigc.png'
 import coopLogo from './Images/coop.png'
 import gtLogo from './Images/GT.png'
 import './App.css'
@@ -11,7 +12,17 @@ function App() {
     <div
       className="fixed top-0 left-0 w-screen h-screen z-[-1] overflow-hidden m-0 p-0 bg-gradient-to-b from-[#fffbe7] to-[#f7e09e]"
     >
-      {/* Mobile*/}
+      {/* Mobile background layer */}
+      <div
+        className="block sm:hidden absolute top-0 left-0 w-full h-full z-0"
+        style={{
+          backgroundImage: `url(${bgrMobileJpg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      />
+      {/* Mobile foreground image */}
       <img
         src={bgrMobile}
         alt=""
@@ -28,28 +39,55 @@ function App() {
           alt=""
           className="absolute top-0 left-0 w-full h-full object-contain z-[1] pointer-events-none select-none hidden sm:block"
         />
-        {/* Table 3 ô logo */}
-        <div className="relative mt-4 w-full flex justify-center sm:absolute sm:left-[67%] sm:-translate-x-1/2 sm:bottom-[11%] sm:z-10 sm:mt-0">
-          <table className="bg-transparent border-separate border-spacing-3">
+        {/* Table 3 ô logo - MOBILE */}
+        <div className="relative mt-4 w-full flex justify-center sm:absolute sm:left-[67%] sm:-translate-x-1/2 sm:bottom-[15%] sm:z-10 sm:mt-0">
+          <table className="block sm:hidden bg-transparent border-separate border-spacing-4">
             <tbody>
               <tr>
                 <td colSpan="3" className="pb-2 text-center">
-                  <span className="font-bold text-xl text-[#315bb7]">Nhấp để tham gia chương trình:</span>
+                  <span className="font-bold text-xl sm:text-2xl text-[#315bb7]">Xem chi tiết chương trình</span>
                 </td>
               </tr>
               <tr>
-                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-24 h-24 sm:w-[150px] sm:h-[150px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#7cc432]">
-                  <a href="https://zalo.me/2516594959299658555" target="_blank" rel="noopener noreferrer">
+                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-24 h-24 sm:w-[100px] sm:h-[100px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#faecc0]">
+                  <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer">
                     <img src={bigcLogo} alt="BigC" className="w-full h-full object-contain" />
                   </a>
                 </td>
-                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-24 h-24 sm:w-[150px] sm:h-[150px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#002a8f]">
-                  <a href="https://zalo.me/2516594959299658555" target="_blank" rel="noopener noreferrer">
+                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-24 h-24 sm:w-[100px] sm:h-[100px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#002a8f]">
+                  <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer">
                     <img src={coopLogo} alt="Co.op" className="w-full h-full object-contain" />
                   </a>
                 </td>
-                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-24 h-24 sm:w-[150px] sm:h-[150px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#fff]">
-                  <a href="https://zalo.me/2516594959299658555" target="_blank" rel="noopener noreferrer">
+                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-24 h-24 sm:w-[100px] sm:h-[100px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#fff]">
+                  <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer">
+                    <img src={gtLogo} alt="GT" className="w-full h-full object-contain" />
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          {/* Table 3 ô logo - DESKTOP */}
+          <table className="hidden sm:table bg-transparent border-separate border-spacing-4 sm:border-spacing-x-10">
+            <tbody>
+              <tr>
+                <td colSpan="3" className="pb-2 text-center">
+                  <span className="font-bold text-xl sm:text-2xl text-[#315bb7]">Xem chi tiết chương trình</span>
+                </td>
+              </tr>
+              <tr>
+                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-24 h-24 sm:w-[100px] sm:h-[100px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#faecc0]">
+                  <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer">
+                    <img src={bigcLogo} alt="BigC" className="w-full h-full object-contain" />
+                  </a>
+                </td>
+                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-24 h-24 sm:w-[100px] sm:h-[100px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#002a8f]">
+                  <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer">
+                    <img src={coopLogo} alt="Co.op" className="w-full h-full object-contain" />
+                  </a>
+                </td>
+                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-24 h-24 sm:w-[100px] sm:h-[100px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#fff]">
+                  <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer">
                     <img src={gtLogo} alt="GT" className="w-full h-full object-contain" />
                   </a>
                 </td>
