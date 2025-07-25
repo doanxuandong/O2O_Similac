@@ -34,21 +34,36 @@ function App() {
                 <div className="bg-gradient-to-r from-[#ffe082] to-[#f7c948] text-[#222] font-bold px-4 py-1 rounded-tl-lg rounded-br-lg text-sm shadow h-8 flex items-center">BigC</div>
               </div>
               {/* Content */}
-              <button className="w-full bg-[#315bb7] text-white rounded-[5px] px-4 py-2 text-sm font-semibold tracking-wide shadow hover:bg-[#244a99] transition">Tham gia ngay</button>
+              <a
+                href="https://zalo.me/2516594959299658555"
+                className="w-full bg-[#315bb7] text-white rounded-[5px] px-4 py-2 text-sm font-semibold tracking-wide shadow hover:bg-[#244a99] transition text-center block"
+              >
+                Tham gia ngay
+              </a>
             </div>
             {/* Co.op button */}
             <div className="relative bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-full max-w-[220px] min-h-[120px] flex flex-col items-center justify-end pb-8 pt-8 px-6 mx-auto">
               <div className="w-full flex justify-start items-center h-8 mb-2">
                 <div className="bg-gradient-to-r from-[#ffe082] to-[#f7c948] text-[#222] font-bold px-4 py-1 rounded-tl-lg rounded-br-lg text-sm shadow h-8 flex items-center">Co.op</div>
               </div>
-              <button className="w-full bg-[#315bb7] text-white rounded-[5px] px-4 py-2 text-sm font-semibold tracking-wide shadow hover:bg-[#244a99] transition">Tham gia ngay</button>
+              <a
+                href="https://zalo.me/2516594959299658555"
+                className="w-full bg-[#315bb7] text-white rounded-[5px] px-4 py-2 text-sm font-semibold tracking-wide shadow hover:bg-[#244a99] transition text-center block"
+              >
+                Tham gia ngay
+              </a>
             </div>
             {/* GT button */}
             <div className="relative bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-full max-w-[220px] min-h-[120px] flex flex-col items-center justify-end pb-8 pt-8 px-6 mx-auto">
               <div className="w-full flex justify-start items-center h-8 mb-2">
                 <div className="bg-gradient-to-r from-[#ffe082] to-[#f7c948] text-[#222] font-bold px-4 py-1 rounded-tl-lg rounded-br-lg text-sm shadow h-8 flex items-center">GT</div>
               </div>
-              <button className="w-full bg-[#315bb7] text-white rounded-[5px] px-4 py-2 text-sm font-semibold tracking-wide shadow hover:bg-[#244a99] transition">Tham gia ngay</button>
+              <a
+                href="https://zalo.me/2516594959299658555"
+                className="w-full bg-[#315bb7] text-white rounded-[5px] px-4 py-2 text-sm font-semibold tracking-wide shadow hover:bg-[#244a99] transition text-center block"
+              >
+                Tham gia ngay
+              </a>
             </div>
           </div>
         </div>
