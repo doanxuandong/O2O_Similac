@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import bgr from './Images/KV_Promotion_Vulan.png'
 import bgrMobile from './Images/KV_Promotion_Vulan_2.jpg'
+import bigcLogo from './Images/bigc.jpg'
+import coopLogo from './Images/coop.png'
+import gtLogo from './Images/GT.png'
 import './App.css'
 
 function App() {
@@ -16,60 +19,47 @@ function App() {
         style={{ position: 'relative' }}
       />
       <div className="relative w-full h-full">
+        {/* Hiệu ứng mờ 2 bên ảnh nền */}
+        <div className="absolute top-0 left-0 w-[10vw] h-full z-10 pointer-events-none backdrop-blur-md" style={{background: 'linear-gradient(to right, #fffbe7 75%, transparent)'}} />
+        <div className="absolute top-0 right-0 w-[10vw] h-full z-10 pointer-events-none backdrop-blur-md" style={{background: 'linear-gradient(to left, #fffbe7 75%, transparent)'}} />
         {/* Desktop */}
         <img
           src={bgr}
           alt=""
           className="absolute top-0 left-0 w-full h-full object-contain z-[1] pointer-events-none select-none hidden sm:block"
         />
-        {/* 3 button vàng gold */}
-        <div
-          className="flex flex-col items-center w-full mt-4 sm:mt-0 sm:absolute sm:left-[67%] sm:-translate-x-1/2 sm:bottom-[15%] sm:flex-col sm:items-center sm:z-[2]"
-        >
-          <div className="flex flex-col gap-4 w-full px-4 sm:flex-row sm:gap-12 sm:w-auto sm:px-0">
-            {/* BigC button */}
-            <div className="relative bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-full max-w-[220px] min-h-[120px] flex flex-col items-center justify-end pb-8 pt-8 px-6 mx-auto">
-              {/* Label */}
-              <div className="w-full flex justify-start items-center h-8 mb-2">
-                <div className="bg-gradient-to-r from-[#ffe082] to-[#f7c948] text-[#222] font-bold px-4 py-1 rounded-tl-lg rounded-br-lg text-sm shadow h-8 flex items-center">BigC</div>
-              </div>
-              {/* Content */}
-              <a
-                href="https://zalo.me/2516594959299658555"
-                className="w-full bg-[#315bb7] text-white rounded-[5px] px-4 py-2 text-sm font-semibold tracking-wide shadow hover:bg-[#244a99] transition text-center block"
-              >
-                Tham gia ngay
-              </a>
-            </div>
-            {/* Co.op button */}
-            <div className="relative bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-full max-w-[220px] min-h-[120px] flex flex-col items-center justify-end pb-8 pt-8 px-6 mx-auto">
-              <div className="w-full flex justify-start items-center h-8 mb-2">
-                <div className="bg-gradient-to-r from-[#ffe082] to-[#f7c948] text-[#222] font-bold px-4 py-1 rounded-tl-lg rounded-br-lg text-sm shadow h-8 flex items-center">Co.op</div>
-              </div>
-              <a
-                href="https://zalo.me/2516594959299658555"
-                className="w-full bg-[#315bb7] text-white rounded-[5px] px-4 py-2 text-sm font-semibold tracking-wide shadow hover:bg-[#244a99] transition text-center block"
-              >
-                Tham gia ngay
-              </a>
-            </div>
-            {/* GT button */}
-            <div className="relative bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-full max-w-[220px] min-h-[120px] flex flex-col items-center justify-end pb-8 pt-8 px-6 mx-auto">
-              <div className="w-full flex justify-start items-center h-8 mb-2">
-                <div className="bg-gradient-to-r from-[#ffe082] to-[#f7c948] text-[#222] font-bold px-4 py-1 rounded-tl-lg rounded-br-lg text-sm shadow h-8 flex items-center">GT</div>
-              </div>
-              <a
-                href="https://zalo.me/2516594959299658555"
-                className="w-full bg-[#315bb7] text-white rounded-[5px] px-4 py-2 text-sm font-semibold tracking-wide shadow hover:bg-[#244a99] transition text-center block"
-              >
-                Tham gia ngay
-              </a>
-            </div>
-          </div>
+        {/* Table 3 ô logo */}
+        <div className="absolute left-[67%] -translate-x-1/2 bottom-[10%] z-10 w-full flex justify-center">
+          <table className="bg-transparent border-separate border-spacing-3">
+            <tbody>
+              <tr>
+                <td colSpan="3" className="pb-2 text-center">
+                  <span className="font-bold text-xl text-[#315bb7]">Nhấp để tham gia chương trình:</span>
+                </td>
+              </tr>
+              <tr>
+                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-[150px] h-[150px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110">
+                  <a href="https://zalo.me/2516594959299658555" target="_blank" rel="noopener noreferrer">
+                    <img src={bigcLogo} alt="BigC" className="w-full h-full object-contain" />
+                  </a>
+                </td>
+                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-[150px] h-[150px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110">
+                  <a href="https://zalo.me/2516594959299658555" target="_blank" rel="noopener noreferrer">
+                    <img src={coopLogo} alt="Co.op" className="w-full h-full object-contain" />
+                  </a>
+                </td>
+                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-[150px] h-[150px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110">
+                  <a href="https://zalo.me/2516594959299658555" target="_blank" rel="noopener noreferrer">
+                    <img src={gtLogo} alt="GT" className="w-full h-full object-contain" />
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
-  ) 
+  )
 }
 
 export default App
