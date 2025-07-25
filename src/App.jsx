@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import bgr from './Images/KV_Promotion_Vulan_3.png'
 import bgrMobile from './Images/KV_Promotion_Vulan_2.jpg'
-import bgrMobileJpg from './Images/bgrmobile.jpg'
+import bgrMobileJpg from './Images/bgrmb.png'
 import bigcLogo from './Images/bigc.png'
 import coopLogo from './Images/coop.png'
 import gtLogo from './Images/GT.png'
@@ -22,13 +22,13 @@ function App() {
           backgroundRepeat: 'no-repeat',
         }}
       />
-      {/* Mobile foreground image */}
+      {/* Mobile foreground image
       <img
         src={bgrMobile}
         alt=""
         className="block sm:hidden w-full object-contain z-[1] pointer-events-none select-none"
         style={{ position: 'relative' }}
-      />
+      /> */}
       <div className="relative w-full h-full">
         {/* Hiệu ứng mờ 2 bên ảnh nền */}
         {/* <div className="absolute top-0 left-0 w-[10vw] h-full z-10 pointer-events-none hidden sm:block" style={{background: 'linear-gradient(to right, #fffbe7 65%, transparent)'}} />
