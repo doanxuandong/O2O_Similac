@@ -46,8 +46,8 @@ function App() {
           <table className="bg-transparent border-separate border-spacing-4">
             <tbody>
               <tr>
-                <td colSpan="3" className="pb-2 text-center">
-                  <span className="font-bold text-xl sm:text-2xl text-[#315bb7]">Xem chi tiết chương trình</span>
+                <td colSpan="3" className="pb-0 text-center">
+                  <span className="font-bold text-sm sm:text-2xl text-[#315bb7]">Xem chi tiết chương trình</span>
                 </td>
               </tr>
               <tr>
