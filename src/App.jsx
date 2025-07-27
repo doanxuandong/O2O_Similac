@@ -19,7 +19,7 @@ function App() {
       className="fixed top-0 left-0 w-screen h-screen z-[-1] overflow-hidden m-0 p-0 bg-gradient-to-b from-[#fffbe7] to-[#f7e09e]"
     >
       {/* Mobile Container - Gom tất cả thành phần mobile */}
-      <div className="block sm:hidden relative w-full h-full">
+      <div className="block sm:hidden flex flex-col w-full h-full">
         {/* Mobile background layer */}
         <div
           className="absolute top-0 left-0 w-full h-full z-0"
@@ -32,17 +32,17 @@ function App() {
         />
         
         {/* Lion ở đầu mobile */}
-        <div className="relative w-full flex justify-center z-10">
+        <div className="flex-shrink-0 w-full flex justify-center z-10">
           <img src={pic_lion} alt="Lion" className="w-full h-auto" />
         </div>
         
         {/* COV dưới lion */}
-        <div className="relative w-full flex justify-center z-10 mt-0">
+        <div className="flex-shrink-0 w-full flex justify-center z-10">
           <img src={COV} alt="COV" className="w-full h-auto" />
         </div>
         
         {/* Table 3 ô logo - MOBILE */}
-        <div className="relative w-full flex justify-center z-10 mt-0">
+        <div className="flex-shrink-0 w-full flex justify-center z-10 py-4">
           <table className="bg-transparent border-separate border-spacing-4">
             <tbody>
               <tr>
@@ -71,8 +71,11 @@ function App() {
           </table>
         </div>
         
+        {/* Spacer để đẩy mokup xuống dưới */}
+        <div className="flex-grow"></div>
+        
         {/* Mokup mobile */}
-        <div className="absolute bottom-0 left-0 w-full flex justify-center z-10">
+        <div className="flex-shrink-0 w-full flex justify-center z-10">
           <img src={mokup} alt="Mokup" className="w-1/2 h-auto" />
         </div>
         
