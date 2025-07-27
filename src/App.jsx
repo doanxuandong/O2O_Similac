@@ -95,7 +95,7 @@ function App() {
           className="absolute top-0 left-0 w-full h-full object-contain z-[1] pointer-events-none select-none hidden sm:block"
         />
         {/* Hiệu ứng mờ 2 bên ảnh nền desktop */}
-        <div
+        {/* <div
           className="absolute top-0 left-0 w-[10vw] h-full z-10 pointer-events-none hidden sm:block"
           style={{
             background: 'linear-gradient(to right, #fffbe7 65%, transparent)',
@@ -108,7 +108,7 @@ function App() {
             background: 'linear-gradient(to left, #fffbe7 65%, transparent)',
             filter: 'blur(8px)'
           }}
-        />
+        /> */}
         {/* Table 3 ô logo - DESKTOP */}
         <div className="relative w-full flex justify-center sm:absolute sm:left-[67%] sm:-translate-x-1/2 sm:bottom-[15%] sm:z-10 sm:mt-0">
           <table className="hidden sm:table bg-transparent border-separate border-spacing-4 sm:border-spacing-x-10 mt-0">
