@@ -1,13 +1,14 @@
 import { useState } from 'react'
-import bgr from './Images/KV_Promotion_Vulan_3.png'
+import bgr from './Images/KV_Promotion_Vulan_4.png'
 import bgrMobile from './Images/KV_Promotion_Vulan_2.jpg'
 import bgrMobileJpg from './Images/bgrmb.png'
 import bigcLogo from './Images/bigc.png'
 import coopLogo from './Images/coop.png'
 import gtLogo from './Images/GT.png'
 import milk1 from './Images/Element_19.png'
-import milk2 from './Images/Element_21.png'
+import milk2 from './Images/Element_22.png'
 import rose from './Images/rose.png'
+import mokup from './Images/mokup.png'
 import './App.css'
 
 function App() {
@@ -33,9 +34,13 @@ function App() {
         style={{ position: 'relative' }}
       /> */}
       {/* 2 lon sữa dưới đáy mobile */}
-      <div className="block sm:hidden absolute bottom-0 left-0 w-full flex justify-center z-10">
+      {/* <div className="block sm:hidden absolute bottom-0 left-0 w-full flex justify-center z-10">
         <img src={milk1} alt="Sữa 1" className="w-24 h-auto mx-2 transform transition-transform duration-300 hover:scale-110" />
         <img src={milk2} alt="Sữa 2" className="w-24 h-auto mx-2 transform transition-transform duration-300 hover:scale-110" />
+      </div> */}
+      {/* Mokup mobile */}
+      <div className="block sm:hidden absolute bottom-0 left-0 w-full flex justify-center z-10">
+        <img src={mokup} alt="Mokup" className="w-1/2 h-auto" />
       </div>
       {/* Hoa hồng góc trái dưới mobile */}
       <div className="block sm:hidden absolute bottom-0 left-0 z-0">
