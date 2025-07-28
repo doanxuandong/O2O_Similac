@@ -39,7 +39,7 @@ function App() {
         </div>
         
         {/* Table 3 ô logo - MOBILE */}
-        <div className="flex-shrink-0 w-full flex justify-center z-10 py-4">
+        <div className="flex-shrink-0 w-full flex justify-center z-10">
           <table className="bg-transparent border-separate border-spacing-4">
             <tbody>
               <tr>
