@@ -16,7 +16,7 @@ function App() {
       className="fixed top-0 left-0 w-screen h-screen z-[-1] m-0 p-0 bg-gradient-to-b from-[#fffbe7] to-[#f7e09e]"
     >
       {/* Mobile Container - Gom tất cả thành phần mobile */}
-      <div className="block sm:hidden flex flex-col w-full h-screen pb-0">
+      <div className="flex sm:hidden flex-col w-full h-screen pb-0">
         {/* Mobile background layer */}
         <div
           className="absolute top-0 left-0 w-full h-full z-0"
@@ -48,17 +48,17 @@ function App() {
                 </td>
               </tr>
               <tr>
-                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-24 h-24 sm:w-[100px] sm:h-[100px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#fff]">
+                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-24 h-24 sm:w-[80px] sm:h-[80px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#fff]">
                   <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer">
                     <img src={bigcLogo} alt="BigC" className="w-full h-full object-contain" />
                   </a>
                 </td>
-                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-24 h-24 sm:w-[100px] sm:h-[100px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#fff]">
+                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-24 h-24 sm:w-[80px] sm:h-[80px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#fff]">
                   <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer">
                     <img src={coopLogo} alt="Co.op" className="w-full h-full object-contain" />
                   </a>
                 </td>
-                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-24 h-24 sm:w-[100px] sm:h-[100px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#fff]">
+                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-24 h-24 sm:w-[80px] sm:h-[80px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#fff]">
                   <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer">
                     <img src={gtLogo} alt="GT" className="w-full h-full object-contain" />
                   </a>
@@ -70,12 +70,12 @@ function App() {
         
         {/* Mokup mobile */}
         <div className="w-full flex justify-center z-10 mt-auto">
-          <img src={mokup} alt="Mokup" className="w-1/2 h-auto" />
+          <img src={mokup} alt="Mokup" className="w-[35%] h-auto" />
         </div>
         
         {/* Hoa hồng góc trái dưới mobile */}
         <div className="absolute bottom-0 left-0 z-0">
-          <img src={rose} alt="Rose" className="w-300 h-auto opacity-80" />
+          <img src={rose} alt="Rose" className="w-200 h-auto opacity-80" />
         </div>
       </div>
       <div className="relative w-full h-full">
