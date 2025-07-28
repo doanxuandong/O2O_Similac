@@ -16,7 +16,7 @@ function App() {
       className="fixed top-0 left-0 w-screen h-screen z-[-1] overflow-hidden m-0 p-0 bg-gradient-to-b from-[#fffbe7] to-[#f7e09e]"
     >
       {/* Mobile Container - Gom tất cả thành phần mobile */}
-      <div className="block sm:hidden flex flex-col w-full h-full">
+      <div className="block sm:hidden flex flex-col w-full min-h-screen">
         {/* Mobile background layer */}
         <div
           className="absolute top-0 left-0 w-full h-full z-0"
@@ -68,11 +68,8 @@ function App() {
           </table>
         </div>
         
-        {/* Spacer để đẩy mokup xuống dưới */}
-        <div className="flex-grow"></div>
-        
         {/* Mokup mobile */}
-        <div className="flex-shrink-0 w-full flex justify-center z-10">
+        <div className="w-full flex justify-center z-10 mt-auto pt-4">
           <img src={mokup} alt="Mokup" className="w-1/2 h-auto" />
         </div>
         
