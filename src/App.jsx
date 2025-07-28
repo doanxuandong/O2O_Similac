@@ -69,7 +69,7 @@ function App() {
         </div>
         
         {/* Mokup mobile */}
-        <div className="w-full flex justify-center z-10 pt-4 mt-auto">
+        <div className="w-full flex justify-center z-10 pt-4 mt-1">
           <img src={mokup} alt="Mokup" className="w-1/2 h-auto" />
         </div>
         
