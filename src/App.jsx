@@ -73,7 +73,7 @@ function App() {
         
         {/* Mokup mobile */}
         <div className="flex-shrink-0 w-full flex justify-center z-10">
-          <img src={mokup} alt="Mokup" className="w-2/3 h-auto" />
+          <img src={mokup} alt="Mokup" className="w-1/2 h-auto" />
         </div>
         
         {/* Hoa hồng góc trái dưới mobile */}
