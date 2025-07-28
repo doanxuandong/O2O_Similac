@@ -2,7 +2,7 @@ import { useState } from 'react'
 import bgr from './Images/KV_Promotion_Vulan_4.png'
 import bgrMobile from './Images/KV_Promotion_Vulan_2.jpg'
 import bgrMobileJpg from './Images/bgrmobile.jpg'
-import bigcLogo from './Images/bigc.png'
+import bigcLogo from './Images/central.png'
 import coopLogo from './Images/coop.png'
 import gtLogo from './Images/GT.png'
 // import milk1 from './Images/Element_19.png'
@@ -47,16 +47,16 @@ function App() {
             <tbody>
               <tr>
                 <td colSpan="3" className="pb-0 text-center">
-                  <span className="font-bold text-sm sm:text-2xl text-[#315bb7]">Xem chi tiết chương trình</span>
+                  <span className="font-bold text-sm sm:text-2xl text-[#315bb7]">THAM GIA NGAY TẠI CÁC ĐIỂM BÁN</span>
                 </td>
               </tr>
               <tr>
-                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-24 h-24 sm:w-[100px] sm:h-[100px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#faecc0]">
+                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-24 h-24 sm:w-[100px] sm:h-[100px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#fff]">
                   <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer">
                     <img src={bigcLogo} alt="BigC" className="w-full h-full object-contain" />
                   </a>
                 </td>
-                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-24 h-24 sm:w-[100px] sm:h-[100px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#002a8f]">
+                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-24 h-24 sm:w-[100px] sm:h-[100px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#fff]">
                   <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer">
                     <img src={coopLogo} alt="Co.op" className="w-full h-full object-contain" />
                   </a>
@@ -115,16 +115,16 @@ function App() {
             <tbody>
               <tr>
                 <td colSpan="3" className="pb-2 text-center">
-                  <span className="font-bold text-xl sm:text-2xl text-[#315bb7]">Xem chi tiết chương trình</span>
+                  <span className="font-bold text-xl sm:text-xl text-[#315bb7]">THAM GIA NGAY TẠI CÁC ĐIỂM BÁN</span>
                 </td>
               </tr>
               <tr>
-                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-24 h-24 sm:w-[100px] sm:h-[100px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#faecc0]">
+                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-24 h-24 sm:w-[100px] sm:h-[100px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#fff]">
                   <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer">
                     <img src={bigcLogo} alt="BigC" className="w-full h-full object-contain" />
                   </a>
                 </td>
-                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-24 h-24 sm:w-[100px] sm:h-[100px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#002a8f]">
+                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-24 h-24 sm:w-[100px] sm:h-[100px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#fff]">
                   <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer">
                     <img src={coopLogo} alt="Co.op" className="w-full h-full object-contain" />
                   </a>
