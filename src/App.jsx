@@ -109,6 +109,17 @@ function App() {
             filter: 'blur(8px)'
           }}
         /> */}
+        
+        {/* Rose ở góc trái dưới desktop */}
+        <div className="absolute bottom-0 left-0 z-0 hidden sm:block">
+          <img src={rose} alt="Rose" className="w-64 h-auto opacity-80" />
+        </div>
+        
+        {/* Rose ở góc phải dưới desktop */}
+        <div className="absolute bottom-0 right-0 z-0 hidden sm:block">
+          <img src={rose} alt="Rose" className="w-64 h-auto opacity-80 transform scale-x-[-1]" />
+        </div>
+        
         {/* Table 3 ô logo - DESKTOP */}
         <div className="relative w-full flex justify-center sm:absolute sm:left-[67%] sm:-translate-x-1/2 sm:bottom-[15%] sm:z-10 sm:mt-0">
           <table className="hidden sm:table bg-transparent border-separate border-spacing-4 sm:border-spacing-x-10 mt-0">
