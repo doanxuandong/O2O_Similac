@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import bgr from './Images/KV_Promotion_Vulan_4.png'
+import bgr from './Images/KV_Promotion_Vulan.png'
 import bgrMobileJpg from './Images/bgrmobile.jpg'
 import bigcLogo from './Images/central.png'
 import coopLogo from './Images/coop.png'
@@ -86,7 +86,7 @@ function App() {
         <img
           src={bgr}
           alt=""
-          className="absolute top-0 left-0 w-full h-full object-contain z-[1] pointer-events-none select-none hidden sm:block"
+          className="absolute top-0 left-0 w-full h-full object-cover z-[1] pointer-events-none select-none hidden sm:block"
         />
         {/* Hiệu ứng mờ 2 bên ảnh nền desktop */}
         {/* <div
@@ -105,14 +105,14 @@ function App() {
         /> */}
         
         {/* Rose ở góc trái dưới desktop */}
-        <div className="absolute bottom-0 left-0 z-0 hidden sm:block">
+        {/* <div className="absolute bottom-0 left-0 z-0 hidden sm:block">
           <img src={rose} alt="Rose" className="w-64 h-auto opacity-80" />
-        </div>
+        </div> */}
         
         {/* Rose ở góc phải dưới desktop */}
-        <div className="absolute bottom-0 right-0 z-0 hidden sm:block">
+        {/* <div className="absolute bottom-0 right-0 z-0 hidden sm:block">
           <img src={rose} alt="Rose" className="w-64 h-auto opacity-80 transform scale-x-[-1]" />
-        </div>
+        </div> */}
         
         {/* Table 3 ô logo - DESKTOP */}
         <div className="relative w-full flex justify-center sm:absolute sm:left-[67%] sm:-translate-x-1/2 sm:bottom-[11%] sm:z-10 sm:mt-0">
