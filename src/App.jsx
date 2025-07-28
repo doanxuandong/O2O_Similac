@@ -13,10 +13,10 @@ import './App.css'
 function App() {
   return (
     <div
-      className="fixed top-0 left-0 w-screen h-screen z-[-1] overflow-hidden m-0 p-0 bg-gradient-to-b from-[#fffbe7] to-[#f7e09e]"
+      className="fixed top-0 left-0 w-screen h-screen z-[-1] overflow-y-auto m-0 p-0 bg-gradient-to-b from-[#fffbe7] to-[#f7e09e]"
     >
       {/* Mobile Container - Gom tất cả thành phần mobile */}
-      <div className="block sm:hidden flex flex-col w-full min-h-screen">
+      <div className="block sm:hidden flex flex-col w-full min-h-screen pb-8">
         {/* Mobile background layer */}
         <div
           className="absolute top-0 left-0 w-full h-full z-0"
@@ -69,7 +69,7 @@ function App() {
         </div>
         
         {/* Mokup mobile */}
-        <div className="w-full flex justify-center z-10 mt-auto pt-4">
+        <div className="w-full flex justify-center z-10 pt-4">
           <img src={mokup} alt="Mokup" className="w-1/2 h-auto" />
         </div>
         
