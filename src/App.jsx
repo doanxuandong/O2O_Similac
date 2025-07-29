@@ -47,7 +47,7 @@ function App() {
             <tbody>
               <tr>
                 <td colSpan="3" className="pb-0 text-center">
-                  <span className="font-bold text-sm sm:text-2xl border-2 border-blue-900 p-1 pl-2 pr-2 rounded-[999px] bg-[#154da1] text-[#fff]">THAM GIA NGAY TẠI CÁC ĐIỂM BÁN</span>
+                  <span className="font-bold text-[10px] sm:text-2xl border-2 border-blue-900 p-1 pl-2 pr-2 rounded-[999px] bg-[#fff] text-[#154da1]">CHỌN ĐIỂM BÁN BÊN DƯỚI ĐỂ THAM GIA CHƯƠNG TRÌNH</span>
                 </td>
               </tr>
               <tr>
@@ -122,11 +122,11 @@ function App() {
           <table className="hidden sm:table bg-transparent border-separate border-spacing-2 sm:border-spacing-x-5 mt-0">
             <tbody>
               <tr>
-                <td colSpan="3" className="pb-2 text-center">
-                  <span className="font-bold text-xl border-2 border-blue-900 p-1 pl-2 pr-2 rounded-[999px] bg-[#154da1] sm:text-sm text-[#fff]">CHỌN ĐIỂM BÁN BÊN DƯỚI ĐỂ THAM GIA CHƯƠNG TRÌNH</span>
-                </td>
+                                  <td colSpan="3" className="pb-2 text-center">
+                    <span className="font-bold text-xl border-2 border-blue-900 p-1 pl-2 pr-2 rounded-[999px] bg-[#fff] sm:text-sm text-[#154da1] shadow-[0_4px_8px_rgba(0,0,0,0.3),0_2px_4px_rgba(0,0,0,0.2)] transform hover:scale-105 transition-all duration-300 text-shadow-[0_1px_2px_rgba(0,0,0,0.1)]">CHỌN ĐIỂM BÁN BÊN DƯỚI ĐỂ THAM GIA CHƯƠNG TRÌNH</span>
+                  </td>
               </tr>
-                              <tr>
+              <tr>
                   <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-[6px] shadow-lg w-24 h-24 sm:w-[140px] sm:h-[80px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#fff]">
                     <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer">
                       {/* <img src={bigcLogo} alt="BigC" className="w-full h-full object-contain hidden sm:block" /> */}
@@ -154,7 +154,7 @@ function App() {
                     <span className="text-xs font-medium text-[#315bb7] leading-tight -mt-1 block">Chuỗi siêu thị Co.op, Co.op Extra, Co.op Food, Finelife</span>
                   </td>
                   <td className="pt-0 align-top text-center">
-                    <span className="text-xs font-medium text-[#315bb7] leading-tight -mt-1 block">Hệ thống cửa hàng bán lẻ</span>
+                    <span className="text-xs font-medium text-[#315bb7] leading-tight -mt-1 block">Hệ thống cửa hàng <br></br> bán lẻ</span>
                   </td>
                 </tr>
             </tbody>
