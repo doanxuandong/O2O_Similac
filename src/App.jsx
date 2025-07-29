@@ -4,6 +4,9 @@ import bgrMobileJpg from './Images/bgrmobile.jpg'
 import bigcLogo from './Images/central.png'
 import coopLogo from './Images/coop.png'
 import gtLogo from './Images/GT.png'
+import bigcLogoDesktop from './Images/central_desktop.png'
+import coopLogoDesktop from './Images/coop_desktop.png'
+import gtLogoDesktop from './Images/GT_desktop.png'
 import rose from './Images/rose.png'
 import mokup from './Images/mokup.png'
 import pic_lion from './Images/pic_lion.png'
@@ -115,28 +118,31 @@ function App() {
         </div> */}
         
         {/* Table 3 ô logo - DESKTOP */}
-        <div className="relative w-full flex justify-center sm:absolute sm:left-[67%] sm:-translate-x-1/2 sm:bottom-[11%] sm:z-10 sm:mt-0">
+        <div className="relative w-full flex justify-center sm:absolute sm:left-[68%] sm:-translate-x-1/2 sm:bottom-[13%] sm:z-10 sm:mt-0">
           <table className="hidden sm:table bg-transparent border-separate border-spacing-4 sm:border-spacing-x-10 mt-0">
             <tbody>
               <tr>
                 <td colSpan="3" className="pb-2 text-center">
-                  <span className="font-bold text-xl border-2 border-blue-900 p-1 pl-2 pr-2 rounded-[999px] bg-[#fff] sm:text-xl text-[#315bb7]">THAM GIA NGAY TẠI CÁC ĐIỂM BÁN</span>
+                  <span className="font-bold text-xl border-2 border-blue-900 p-1 pl-2 pr-2 rounded-[999px] bg-[#154da1] sm:text-xl text-[#fff]">NHẤN ĐỂ MUA HÀNG TẠI CÁC ĐIỂM BÁN</span>
                 </td>
               </tr>
               <tr>
-                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-24 h-24 sm:w-[120px] sm:h-[120px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#fff]">
+                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-[6px] shadow-lg w-24 h-24 sm:w-[168px] sm:h-[96px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#fff]">
                   <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer">
-                    <img src={bigcLogo} alt="BigC" className="w-full h-full object-contain" />
+                    {/* <img src={bigcLogo} alt="BigC" className="w-full h-full object-contain hidden sm:block" /> */}
+                    <img src={bigcLogoDesktop} alt="BigC Desktop" className="w-full h-full object-contain sm:block" />
                   </a>
                 </td>
-                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-24 h-24 sm:w-[120px] sm:h-[120px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#fff]">
+                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-[6px] shadow-lg w-24 h-24 sm:w-[168px] sm:h-[96px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#fff]">
                   <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer">
-                    <img src={coopLogo} alt="Co.op" className="w-full h-full object-contain" />
+                    {/* <img src={coopLogo} alt="Co.op" className="w-full h-full object-contain hidden sm:block" /> */}
+                    <img src={coopLogoDesktop} alt="Co.op Desktop" className="w-full h-full object-contain sm:block" />
                   </a>
                 </td>
-                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-24 h-24 sm:w-[120px] sm:h-[120px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#fff]">
+                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-[6px] shadow-lg w-24 h-24 sm:w-[168px] sm:h-[96px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#fff]">
                   <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer">
-                    <img src={gtLogo} alt="GT" className="w-full h-full object-contain" />
+                    {/* <img src={gtLogo} alt="GT" className="w-full h-full object-contain hidden sm:block" /> */}
+                    <img src={gtLogoDesktop} alt="GT Desktop" className="w-full h-full object-contain sm:block" />
                   </a>
                 </td>
               </tr>
