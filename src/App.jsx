@@ -118,7 +118,7 @@ function App() {
         </div> */}
         
         {/* Table 3 ô logo - DESKTOP */}
-        <div className="relative w-full flex justify-center sm:absolute sm:left-[68%] sm:-translate-x-1/2 sm:bottom-[15%] sm:z-10 sm:mt-0">
+        <div className="relative w-full flex justify-center sm:absolute sm:left-[68%] sm:-translate-x-1/2 sm:bottom-[16%] sm:z-10 sm:mt-0">
           <table className="hidden sm:table bg-transparent border-separate border-spacing-2 sm:border-spacing-x-5 mt-0">
             <tbody>
               <tr>
