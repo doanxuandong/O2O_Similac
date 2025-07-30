@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import bgr from './Images/KV_Promotion_Vulan_12.png'
-import bgrMobileJpg from './Images/bgrmobile.jpg'
+import bgrMobileJpg from './Images/bg.png'
 import bigcLogo from './Images/central.png'
 import coopLogo from './Images/coop.png'
 import gtLogo from './Images/GT.png'
@@ -10,6 +10,7 @@ import gtLogoDesktop from './Images/stores_notes.png'
 import rose from './Images/rose.png'
 import mokup from './Images/mokup.png'
 import pic_lion from './Images/pic_lion.png'
+import element from './Images/KV_Promotion_Vulan_2.jpg'
 import COV from './Images/COV.png'
 import button from './Images/button_title.png'
 import './App.css'
@@ -34,13 +35,18 @@ function App() {
         
         {/* Lion ở đầu mobile */}
         <div className="w-full flex justify-center z-10">
-          <img src={pic_lion} alt="Lion" className="w-full h-auto" />
+          <img src={element} alt="Lion" className="w-full h-auto" />
+        </div>
+        
+        {/* text hướng dẫn */}
+        <div className='flex justify-center mt-1 px-4 z-10'>
+          <span className='text-black text-left text-sm font-medium italic'>Vui lòng bấm chọn điểm bán hàng bên dưới để tìm hiểu danh sách cửa hàng và thể lệ tham gia</span>
         </div>
         
         {/* COV dưới lion */}
-        <div className="w-full flex justify-center z-10">
+        {/* <div className="w-full flex justify-center z-10">
           <img src={COV} alt="COV" className="w-[95%] h-auto" />
-        </div>
+        </div> */}
         
         {/* Table 3 ô logo - MOBILE */}
         <div className="w-full flex justify-center z-10">
@@ -73,14 +79,14 @@ function App() {
         </div>
         
         {/* Mokup mobile */}
-        <div className="w-full flex justify-center z-10 mt-auto">
+        {/* <div className="w-full flex justify-center z-10 mt-auto">
           <img src={mokup} alt="Mokup" className="w-[50%] h-auto" />
-        </div>
+        </div> */}
         
         {/* Hoa hồng góc trái dưới mobile */}
-        <div className="absolute bottom-0 left-0 z-0">
+        {/* <div className="absolute bottom-0 left-0 z-0">
           <img src={rose} alt="Rose" className="w-200 h-auto opacity-80" />
-        </div>
+        </div> */}
       </div>
       <div className="relative w-full h-full">
         {/* Desktop */}
