@@ -13,6 +13,9 @@ import pic_lion from './Images/pic_lion.png'
 import element from './Images/KV_Promotion_Vulan_2.jpg'
 import COV from './Images/COV.png'
 import button from './Images/button_title.png'
+import centralMobile from './Images/central_mobile.png'
+import coopMobile from './Images/coop_mobile.png'
+import banleMobile from './Images/banle_mobile.png'
 import './App.css'
 
 function App() {
@@ -43,13 +46,28 @@ function App() {
           <span className='text-black text-left text-sm font-medium italic'>Vui lòng bấm chọn điểm bán hàng bên dưới để tìm hiểu danh sách cửa hàng và thể lệ tham gia</span>
         </div>
         
+        {/* 3 ảnh mobile mới */}
+        <div className='flex flex-col items-center mt-8 px-4 z-10 space-y-7'>
+          <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer" className="w-full max-w-sm">
+            <img src={centralMobile} alt="Central Retail" className="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" />
+          </a>
+          
+          <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer" className="w-full max-w-sm">
+            <img src={banleMobile} alt="Bán lẻ" className="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" />
+          </a>
+          
+          <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer" className="w-full max-w-sm">
+            <img src={coopMobile} alt="Co.opmart" className="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" />
+          </a>
+        </div>
+        
         {/* COV dưới lion */}
         {/* <div className="w-full flex justify-center z-10">
           <img src={COV} alt="COV" className="w-[95%] h-auto" />
         </div> */}
         
         {/* Table 3 ô logo - MOBILE */}
-        <div className="w-full flex justify-center z-10">
+        {/* <div className="w-full flex justify-center z-10">
           <table className="bg-transparent border-separate border-spacing-4">
             <tbody>
               <tr>
@@ -76,7 +94,7 @@ function App() {
               </tr>
             </tbody>
           </table>
-        </div>
+        </div> */}
         
         {/* Mokup mobile */}
         {/* <div className="w-full flex justify-center z-10 mt-auto">
