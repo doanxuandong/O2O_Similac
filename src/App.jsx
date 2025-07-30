@@ -4,13 +4,14 @@ import bgrMobileJpg from './Images/bgrmobile.jpg'
 import bigcLogo from './Images/central.png'
 import coopLogo from './Images/coop.png'
 import gtLogo from './Images/GT.png'
-import bigcLogoDesktop from './Images/central_desktop.png'
-import coopLogoDesktop from './Images/coop_desktop.png'
-import gtLogoDesktop from './Images/GT_desktop.png'
+import bigcLogoDesktop from './Images/central_notes.png'
+import coopLogoDesktop from './Images/coop_notes.png'
+import gtLogoDesktop from './Images/stores_notes.png'
 import rose from './Images/rose.png'
 import mokup from './Images/mokup.png'
 import pic_lion from './Images/pic_lion.png'
 import COV from './Images/COV.png'
+import button from './Images/button_title.png'
 import './App.css'
 
 function App() {
@@ -90,28 +91,28 @@ function App() {
         />
         
         {/* Table 3 ô logo - DESKTOP */}
-        <div className="relative w-full flex justify-center sm:absolute sm:left-[68%] sm:-translate-x-1/2 sm:bottom-[12%] sm:z-10 sm:mt-0">
-          <table className="hidden sm:table bg-transparent border-separate border-spacing-2 sm:border-spacing-x-5 mt-0">
+        <div className="relative w-full flex justify-center sm:absolute sm:left-[68%] sm:-translate-x-1/2 sm:bottom-[16%] sm:z-10 sm:mt-0">
+          <table className="hidden sm:table bg-transparent border-separate border-spacing-0 sm:border-spacing-x-5 mt-0">
             <tbody>
-              <tr>
+              {/* <tr>
                   <td colSpan="3" className="pb-2 text-center">
                     <span className="font-brandon font-bold text-xl border-2 border-blue-900 p-1 pl-2 pr-2 rounded-[999px] bg-[#fff] sm:text-sm text-[#154da1] shadow-[0_4px_8px_rgba(0,0,0,0.3),0_2px_4px_rgba(0,0,0,0.2)] transform hover:scale-105 transition-all duration-300 text-shadow-[0_1px_2px_rgba(0,0,0,0.1)]">CHỌN ĐIỂM BÁN BÊN DƯỚI ĐỂ THAM GIA CHƯƠNG TRÌNH</span>
                   </td>
-              </tr>
+              </tr> */}
               <tr>
-                  <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-[6px] shadow-lg w-24 h-24 sm:w-[140px] sm:h-[80px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#fff]">
+                  <td className="sm:w-[168px] sm:h-[96px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110">
                     <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer">
                       {/* <img src={bigcLogo} alt="BigC" className="w-full h-full object-contain hidden sm:block" /> */}
                       <img src={bigcLogoDesktop} alt="BigC Desktop" className="w-full h-full object-contain sm:block" />
                     </a>
                   </td>
-                  <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-[6px] shadow-lg w-24 h-24 sm:w-[140px] sm:h-[80px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#fff]">
+                  <td className="sm:w-[168px] sm:h-[96px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110">
                     <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer">
                       {/* <img src={coopLogo} alt="Co.op" className="w-full h-full object-contain hidden sm:block" /> */}
                       <img src={coopLogoDesktop} alt="Co.op Desktop" className="w-full h-full object-contain sm:block" />
                     </a>
                   </td>
-                  <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-[6px] shadow-lg w-24 h-24 sm:w-[140px] sm:h-[80px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#fff]">
+                  <td className="sm:w-[168px] sm:h-[96px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110">
                     <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer">
                       {/* <img src={gtLogo} alt="GT" className="w-full h-full object-contain hidden sm:block" /> */}
                       <img src={gtLogoDesktop} alt="GT Desktop" className="w-full h-full object-contain sm:block" />
@@ -119,6 +120,12 @@ function App() {
                   </td>
                 </tr>
                 <tr>
+                  <td colSpan="3" className="pt-2 justify-center align-top">
+                    {/* <span className="font-brandon font-bold text-xl border-2 border-blue-900 p-1 pl-2 pr-2 rounded-[999px] bg-[#fff] sm:text-sm text-[#154da1] shadow-[0_4px_8px_rgba(0,0,0,0.3),0_2px_4px_rgba(0,0,0,0.2)] transform hover:scale-105 transition-all duration-300 text-shadow-[0_1px_2px_rgba(0,0,0,0.1)]">CHỌN ĐIỂM BÁN BÊN DƯỚI ĐỂ THAM GIA CHƯƠNG TRÌNH</span> */}
+                    <img src={button} alt="button title" className='w-full h-[40px] object-contain sm:block'/>
+                  </td>
+              </tr>
+                {/* <tr>
                   <td className="pt-0 align-top text-center">
                     <span className="text-xs font-medium text-[#315bb7] leading-tight -mt-1 block">Chuỗi siêu thị BigC, Go!, Tops Market</span>
                   </td>
@@ -128,7 +135,7 @@ function App() {
                   <td className="pt-0 align-top text-center">
                     <span className="text-xs font-medium text-[#315bb7] leading-tight -mt-1 block">Hệ thống cửa hàng <br></br> bán lẻ</span>
                   </td>
-                </tr>
+                </tr> */}
             </tbody>
           </table>
         </div>
