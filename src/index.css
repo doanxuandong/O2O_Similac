@@ -1,3 +1,11 @@
+@import './fonts/brandon-text.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .font-brandon {
+    font-family: 'Brandon Text', sans-serif;
+  }
+}

@@ -38,7 +38,7 @@ function App() {
         
         {/* COV dưới lion */}
         <div className="w-full flex justify-center z-10">
-          <img src={COV} alt="COV" className="w-full h-auto" />
+          <img src={COV} alt="COV" className="w-[95%] h-auto" />
         </div>
         
         {/* Table 3 ô logo - MOBILE */}
@@ -118,12 +118,12 @@ function App() {
         </div> */}
         
         {/* Table 3 ô logo - DESKTOP */}
-        <div className="relative w-full flex justify-center sm:absolute sm:left-[68%] sm:-translate-x-1/2 sm:bottom-[16%] sm:z-10 sm:mt-0">
+        <div className="relative w-full flex justify-center sm:absolute sm:left-[68%] sm:-translate-x-1/2 sm:bottom-[12%] sm:z-10 sm:mt-0">
           <table className="hidden sm:table bg-transparent border-separate border-spacing-2 sm:border-spacing-x-5 mt-0">
             <tbody>
               <tr>
-                                  <td colSpan="3" className="pb-2 text-center">
-                    <span className="font-bold text-xl border-2 border-blue-900 p-1 pl-2 pr-2 rounded-[999px] bg-[#fff] sm:text-sm text-[#154da1] shadow-[0_4px_8px_rgba(0,0,0,0.3),0_2px_4px_rgba(0,0,0,0.2)] transform hover:scale-105 transition-all duration-300 text-shadow-[0_1px_2px_rgba(0,0,0,0.1)]">CHỌN ĐIỂM BÁN BÊN DƯỚI ĐỂ THAM GIA CHƯƠNG TRÌNH</span>
+                  <td colSpan="3" className="pb-2 text-center">
+                    <span className="font-brandon font-bold text-xl border-2 border-blue-900 p-1 pl-2 pr-2 rounded-[999px] bg-[#fff] sm:text-sm text-[#154da1] shadow-[0_4px_8px_rgba(0,0,0,0.3),0_2px_4px_rgba(0,0,0,0.2)] transform hover:scale-105 transition-all duration-300 text-shadow-[0_1px_2px_rgba(0,0,0,0.1)]">CHỌN ĐIỂM BÁN BÊN DƯỚI ĐỂ THAM GIA CHƯƠNG TRÌNH</span>
                   </td>
               </tr>
               <tr>
