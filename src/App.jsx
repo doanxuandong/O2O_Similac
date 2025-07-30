@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import bgr from './Images/KV_Promotion_Vulan.png'
+import bgr from './Images/KV_Promotion_Vulan_12.png'
 import bgrMobileJpg from './Images/bgrmobile.jpg'
 import bigcLogo from './Images/central.png'
 import coopLogo from './Images/coop.png'
