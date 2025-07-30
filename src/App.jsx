@@ -82,40 +82,12 @@ function App() {
         </div>
       </div>
       <div className="relative w-full h-full">
-        {/* Hiệu ứng mờ 2 bên ảnh nền */}
-        {/* <div className="absolute top-0 left-0 w-[10vw] h-full z-10 pointer-events-none hidden sm:block" style={{background: 'linear-gradient(to right, #fffbe7 65%, transparent)'}} />
-        <div className="absolute top-0 right-0 w-[10vw] h-full z-10 pointer-events-none hidden sm:block" style={{background: 'linear-gradient(to left, #fffbe7 65%, transparent)'}} /> */}
         {/* Desktop */}
         <img
           src={bgr}
           alt=""
           className="absolute top-0 left-0 w-full h-full object-cover z-[1] pointer-events-none select-none hidden sm:block"
         />
-        {/* Hiệu ứng mờ 2 bên ảnh nền desktop */}
-        {/* <div
-          className="absolute top-0 left-0 w-[10vw] h-full z-10 pointer-events-none hidden sm:block"
-          style={{
-            background: 'linear-gradient(to right, #fffbe7 65%, transparent)',
-            filter: 'blur(8px)'
-          }}
-        />
-        <div
-          className="absolute top-0 right-0 w-[10vw] h-full z-10 pointer-events-none hidden sm:block"
-          style={{
-            background: 'linear-gradient(to left, #fffbe7 65%, transparent)',
-            filter: 'blur(8px)'
-          }}
-        /> */}
-        
-        {/* Rose ở góc trái dưới desktop */}
-        {/* <div className="absolute bottom-0 left-0 z-0 hidden sm:block">
-          <img src={rose} alt="Rose" className="w-64 h-auto opacity-80" />
-        </div> */}
-        
-        {/* Rose ở góc phải dưới desktop */}
-        {/* <div className="absolute bottom-0 right-0 z-0 hidden sm:block">
-          <img src={rose} alt="Rose" className="w-64 h-auto opacity-80 transform scale-x-[-1]" />
-        </div> */}
         
         {/* Table 3 ô logo - DESKTOP */}
         <div className="relative w-full flex justify-center sm:absolute sm:left-[68%] sm:-translate-x-1/2 sm:bottom-[12%] sm:z-10 sm:mt-0">
