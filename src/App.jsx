@@ -49,15 +49,15 @@ function App() {
         {/* 3 logo */}
         <div className='flex flex-col items-center mt-6 px-4 z-10 space-y-4'>
 
-          <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer" className="w-full max-w-sm">
+          <a href="https://zalo.me/s/886890990835804119?c=abbott-gt" target="_blank" rel="noopener noreferrer" className="w-full max-w-sm">
             <img src={banleMobile} alt="Bán lẻ" className="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" />
           </a>
 
-          <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer" className="w-full max-w-sm">
+          <a href="https://zalo.me/s/886890990835804119?c=abbott-vu-lan-bigc" target="_blank" rel="noopener noreferrer" className="w-full max-w-sm">
             <img src={centralMobile} alt="Central Retail" className="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" />
           </a>
           
-          <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer" className="w-full max-w-sm">
+          <a href="https://zalo.me/s/886890990835804119?c=abbott-vu-lan-coop" target="_blank" rel="noopener noreferrer" className="w-full max-w-sm">
             <img src={coopMobile} alt="Co.opmart" className="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" />
           </a>
         </div>
@@ -126,19 +126,19 @@ function App() {
               </tr> */}
               <tr>
                   <td className="sm:w-[182px] sm:h-[104px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110">
-                    <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://zalo.me/s/886890990835804119?c=abbott-gt" target="_blank" rel="noopener noreferrer">
                       {/* <img src={gtLogo} alt="GT" className="w-full h-full object-contain hidden sm:block" /> */}
                       <img src={gtLogoDesktop} alt="GT Desktop" className="w-full h-full object-contain sm:block" />
                     </a>
                   </td>
                   <td className="sm:w-[182px] sm:h-[104px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110">
-                    <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://zalo.me/s/886890990835804119?c=abbott-vu-lan-bigc" target="_blank" rel="noopener noreferrer">
                       {/* <img src={bigcLogo} alt="BigC" className="w-full h-full object-contain hidden sm:block" /> */}
                       <img src={bigcLogoDesktop} alt="BigC Desktop" className="w-full h-full object-contain sm:block" />
                     </a>
                   </td>
                   <td className="sm:w-[182px] sm:h-[104px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110">
-                    <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://zalo.me/s/886890990835804119?c=abbott-vu-lan-coop" target="_blank" rel="noopener noreferrer">
                       {/* <img src={coopLogo} alt="Co.op" className="w-full h-full object-contain hidden sm:block" /> */}
                       <img src={coopLogoDesktop} alt="Co.op Desktop" className="w-full h-full object-contain sm:block" />
                     </a>
