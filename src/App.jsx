@@ -46,8 +46,8 @@ function App() {
           <span className='text-black text-left text-sm font-medium italic'>Vui lòng bấm chọn điểm bán hàng bên dưới để tìm hiểu danh sách cửa hàng và thể lệ tham gia</span>
         </div>
         
-        {/* 3 ảnh mobile mới */}
-        <div className='flex flex-col items-center mt-8 px-4 z-10 space-y-7'>
+        {/* 3 logo */}
+        <div className='flex flex-col items-center mt-4 px-4 z-10 space-y-4'>
           <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer" className="w-full max-w-sm">
             <img src={centralMobile} alt="Central Retail" className="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" />
           </a>
