@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import bgr from './Images/KV_Promotion_Vulan_12.png'
-import bgrMobileJpg from './Images/donebgrmb.png'
+import bgrMobileJpg from './Images/bg.jpg'
 import bigcLogo from './Images/central.png'
 import coopLogo from './Images/coop.png'
 import gtLogo from './Images/GT.png'
@@ -35,17 +35,17 @@ function App() {
         />
         
         {/* Lion ở đầu mobile */}
-        <div className="w-full flex justify-center z-10">
+        {/* <div className="w-full flex justify-center z-10">
           <img src={element} alt="Lion" className="w-full h-auto" />
-        </div>
+        </div> */}
         
         {/* text hướng dẫn */}
-        <div className='flex items-center justify-center mt-2 px-4 z-10'>
+        {/* <div className='flex items-center justify-center mt-2 px-4 z-10'>
           <span className='text-[#891655] text-center text-sm font-medium bold'>Vui lòng bấm chọn điểm bán hàng bên dưới để tìm hiểu danh sách cửa hàng và thể lệ tham gia</span>
-        </div>
+        </div> */}
         
         {/* 3 logo */}
-        <div className='flex flex-col items-center mt-6 px-4 z-10 space-y-3'>
+        <div className='flex flex-col items-center mt-80 px-4 z-10 space-y-3'>
 
           <a href="https://zalo.me/s/886890990835804119?c=abbott-gt" target="_blank" rel="noopener noreferrer" className="w-full max-w-sm">
             <img src={banleMobile} alt="Bán lẻ" className="w-full h-[95px] rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" />
