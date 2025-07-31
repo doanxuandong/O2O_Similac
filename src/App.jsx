@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import bgr from './Images/KV_Promotion_Vulan_12.png'
-import bgrMobileJpg from './Images/bg.png'
+import bgrMobileJpg from './Images/donebgrmb.png'
 import bigcLogo from './Images/central.png'
 import coopLogo from './Images/coop.png'
 import gtLogo from './Images/GT.png'
@@ -8,14 +8,12 @@ import bigcLogoDesktop from './Images/central_notes.png'
 import coopLogoDesktop from './Images/coop_notes.png'
 import gtLogoDesktop from './Images/stores_notes.png'
 import rose from './Images/rose.png'
-import mokup from './Images/mokup.png'
-import pic_lion from './Images/pic_lion.png'
-import element from './Images/KV_Promotion_Vulan_2.jpg'
-import COV from './Images/COV.png'
+import element from './Images/picmb.png'
 import button from './Images/button_title.png'
-import centralMobile from './Images/central_mobile.png'
-import coopMobile from './Images/coop_mobile.png'
-import banleMobile from './Images/banle_mobile.png'
+import centralMobile from './Images/central_mb.png'
+import coopMobile from './Images/coop_mb.png'
+import banleMobile from './Images/gt_mb.png'
+import logoAbbott from './Images/logo_abott.png'
 import './App.css'
 
 function App() {
@@ -27,7 +25,7 @@ function App() {
       <div className="flex sm:hidden flex-col w-full h-screen pb-0">
         {/* Mobile background layer */}
         <div
-          className="absolute top-0 left-0 w-full h-full z-0"
+          className="absolute top-0 left-0 w-full h-full z-0 object-cover"
           style={{
             backgroundImage: `url(${bgrMobileJpg})`,
             backgroundSize: 'cover',
@@ -42,8 +40,8 @@ function App() {
         </div>
         
         {/* text hướng dẫn */}
-        <div className='flex items-center justify-center mt-1 px-4 z-10'>
-          <span className='text-[blue] text-left text-sm font-medium italic'>Vui lòng bấm chọn điểm bán hàng bên dưới để tìm hiểu danh sách cửa hàng và thể lệ tham gia</span>
+        <div className='flex items-center justify-center mt-2 px-4 z-10'>
+          <span className='text-[#891655] text-center text-sm font-medium bold'>Vui lòng bấm chọn điểm bán hàng bên dưới để tìm hiểu danh sách cửa hàng và thể lệ tham gia</span>
         </div>
         
         {/* 3 logo */}
@@ -102,10 +100,15 @@ function App() {
           <img src={mokup} alt="Mokup" className="w-[50%] h-auto" />
         </div> */}
         
-        {/* Hoa hồng góc trái dưới mobile */}
-        {/* <div className="absolute bottom-0 left-0 z-0">
-          <img src={rose} alt="Rose" className="w-200 h-auto opacity-80" />
-        </div> */}
+         {/* Hoa hồng góc trái dưới mobile */}
+         <div className="absolute bottom-0 left-0 z-0">
+           <img src={rose} alt="Rose" className="w-200 h-auto opacity-80" />
+         </div>
+         
+         {/* Logo Abbott góc phải dưới mobile */}
+         <div className="absolute bottom-8 right-4 z-10">
+           <img src={logoAbbott} alt="Abbott Logo" className="w-16 h-auto opacity-90" />
+         </div>
       </div>
       <div className="relative w-full h-full">
         {/* Desktop */}
