@@ -45,18 +45,18 @@ function App() {
         </div>
         
         {/* 3 logo */}
-        <div className='flex flex-col items-center mt-6 px-4 z-10 space-y-4'>
+        <div className='flex flex-col items-center mt-6 px-4 z-10 space-y-3'>
 
           <a href="https://zalo.me/s/886890990835804119?c=abbott-gt" target="_blank" rel="noopener noreferrer" className="w-full max-w-sm">
-            <img src={banleMobile} alt="Bán lẻ" className="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" />
+            <img src={banleMobile} alt="Bán lẻ" className="w-full h-[95px] rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" />
           </a>
 
           <a href="https://zalo.me/s/886890990835804119?c=abbott-vu-lan-bigc" target="_blank" rel="noopener noreferrer" className="w-full max-w-sm">
-            <img src={centralMobile} alt="Central Retail" className="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" />
+            <img src={centralMobile} alt="Central Retail" className="w-full h-[95px] rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" />
           </a>
           
           <a href="https://zalo.me/s/886890990835804119?c=abbott-vu-lan-coop" target="_blank" rel="noopener noreferrer" className="w-full max-w-sm">
-            <img src={coopMobile} alt="Co.opmart" className="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" />
+            <img src={coopMobile} alt="Co.opmart" className="w-full h-[95px] rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" />
           </a>
         </div>
         
@@ -106,7 +106,7 @@ function App() {
          </div>
          
          {/* Logo Abbott góc phải dưới mobile */}
-         <div className="absolute bottom-8 right-4 z-10">
+         <div className="absolute bottom-9 right-4 z-10">
            <img src={logoAbbott} alt="Abbott Logo" className="w-16 h-auto opacity-90" />
          </div>
       </div>
