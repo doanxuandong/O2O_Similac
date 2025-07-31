@@ -43,7 +43,7 @@ function App() {
         
         {/* text hướng dẫn */}
         <div className='flex items-center justify-center mt-1 px-4 z-10'>
-          <span className='text-black text-left text-sm font-medium italic'>Vui lòng bấm chọn điểm bán hàng bên dưới để tìm hiểu danh sách cửa hàng và thể lệ tham gia</span>
+          <span className='text-[blue] text-left text-sm font-medium italic'>Vui lòng bấm chọn điểm bán hàng bên dưới để tìm hiểu danh sách cửa hàng và thể lệ tham gia</span>
         </div>
         
         {/* 3 logo */}
@@ -117,7 +117,7 @@ function App() {
         
         {/* Table 3 ô logo - DESKTOP */}
         <div className="relative w-full flex justify-center sm:absolute sm:left-[68%] sm:-translate-x-1/2 sm:bottom-[14%] sm:z-10 sm:mt-0">
-          <table className="hidden sm:table bg-transparent border-separate border-spacing-0 sm:border-spacing-x-2  mt-0">
+          <table className="hidden sm:table bg-transparent border-separate border-spacing-0 sm:border-spacing-x-2 mt-0">
             <tbody>
               {/* <tr>
                   <td colSpan="3" className="pb-2 text-center">
@@ -125,19 +125,19 @@ function App() {
                   </td>
               </tr> */}
               <tr>
-                  <td className="sm:w-[182px] sm:h-[104px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110">
+                  <td className="sm:w-[182px] sm:h-[104px] align-middle text-center p-0 overflow-hidden transform transition-all duration-300 hover:scale-110 hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-lg">
                     <a href="https://zalo.me/s/886890990835804119?c=abbott-gt" target="_blank" rel="noopener noreferrer">
                       {/* <img src={gtLogo} alt="GT" className="w-full h-full object-contain hidden sm:block" /> */}
                       <img src={gtLogoDesktop} alt="GT Desktop" className="w-full h-full object-contain sm:block" />
                     </a>
                   </td>
-                  <td className="sm:w-[182px] sm:h-[104px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110">
+                  <td className="sm:w-[182px] sm:h-[104px] align-middle text-center p-0 overflow-hidden transform transition-all duration-300 hover:scale-110 hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-lg">
                     <a href="https://zalo.me/s/886890990835804119?c=abbott-vu-lan-bigc" target="_blank" rel="noopener noreferrer">
                       {/* <img src={bigcLogo} alt="BigC" className="w-full h-full object-contain hidden sm:block" /> */}
                       <img src={bigcLogoDesktop} alt="BigC Desktop" className="w-full h-full object-contain sm:block" />
                     </a>
                   </td>
-                  <td className="sm:w-[182px] sm:h-[104px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110">
+                  <td className="sm:w-[182px] sm:h-[104px] align-middle text-center p-0 overflow-hidden transform transition-all duration-300 hover:scale-110 hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-lg">
                     <a href="https://zalo.me/s/886890990835804119?c=abbott-vu-lan-coop" target="_blank" rel="noopener noreferrer">
                       {/* <img src={coopLogo} alt="Co.op" className="w-full h-full object-contain hidden sm:block" /> */}
                       <img src={coopLogoDesktop} alt="Co.op Desktop" className="w-full h-full object-contain sm:block" />
