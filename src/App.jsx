@@ -45,7 +45,7 @@ function App() {
         </div> */}
         
         {/* 3 logo */}
-        <div className='flex flex-col items-center w-full mt-80 px-4 z-10 space-y-3'>
+        <div className='flex flex-col items-center w-full mt-[290px] px-4 z-10 space-y-3'>
           <a href="https://zalo.me/s/886890990835804119?c=abbott-gt" target="_blank" rel="noopener noreferrer" className="flex justify-center w-full">
             <img src={banleMobile} alt="Bán lẻ" className="w-[95%] max-w-[350px] h-[95%] rounded-lg" />
           </a>
