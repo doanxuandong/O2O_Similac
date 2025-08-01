@@ -14,6 +14,7 @@ import centralMobile from './Images/central_mb.png'
 import coopMobile from './Images/coop_mb.png'
 import banleMobile from './Images/gt_mb.png'
 import logoAbbott from './Images/logo_abott.png'
+import hdtext from './Images/instructiontext.png'
 import './App.css'
 
 function App() {
@@ -118,40 +119,36 @@ function App() {
         />
         
         {/* Table 3 ô logo - DESKTOP */}
-        <div className="relative w-full flex justify-center sm:absolute sm:left-[68%] sm:-translate-x-1/2 sm:bottom-[14%] sm:z-10 sm:mt-0">
-          <table className="hidden sm:table bg-transparent border-separate border-spacing-0 sm:border-spacing-x-2 mt-0">
+        <div className="relative w-full flex justify-center sm:absolute sm:left-[69%] sm:-translate-x-1/2 sm:bottom-[17%] sm:z-10 sm:mt-0">
+          <table className="hidden sm:table bg-transparent border-separate border-spacing-0 sm:border-spacing-x-6 mt-0">
             <tbody>
-              {/* <tr>
-                  <td colSpan="3" className="pb-2 text-center">
-                    <span className="font-brandon font-bold text-xl border-2 border-blue-900 p-1 pl-2 pr-2 rounded-[999px] bg-[#fff] sm:text-sm text-[#154da1] shadow-[0_4px_8px_rgba(0,0,0,0.3),0_2px_4px_rgba(0,0,0,0.2)] transform hover:scale-105 transition-all duration-300 text-shadow-[0_1px_2px_rgba(0,0,0,0.1)]">CHỌN ĐIỂM BÁN BÊN DƯỚI ĐỂ THAM GIA CHƯƠNG TRÌNH</span>
-                  </td>
-              </tr> */}
               <tr>
-                  <td className="sm:w-[182px] sm:h-[104px] align-middle text-center p-0 overflow-hidden transform transition-all duration-300 hover:scale-110 hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-lg">
+                  <td colSpan="3" className="pb-2 text-center">
+                    <span className="font-brandon font-bold italic text-[13px] text-[#93175b] ">VUI LÒNG BẤM CHỌN ĐIỂM BÁN HÀNG BÊN DƯỚI ĐỂ TÌM HIỂU DANH SÁCH CỬA HÀNG VÀ THỂ LỆ THAM GIA</span>
+                    {/* <img src={hdtext} alt="hdtext" className="w-[300px] h-auto object-contain sm:block" /> */}
+                  </td>
+              </tr>
+              <tr>
+                  <td className="sm:w-[250px] h-auto align-middle text-center p-0 overflow-hidden transform transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-lg hover:bg-white/10">
                     <a href="https://zalo.me/s/886890990835804119?c=abbott-gt" target="_blank" rel="noopener noreferrer">
-                      {/* <img src={gtLogo} alt="GT" className="w-full h-full object-contain hidden sm:block" /> */}
-                      <img src={gtLogoDesktop} alt="GT Desktop" className="w-full h-full object-contain sm:block" />
+                      {/* <img src={gtLogo} alt="GT" className="w-full h-auto object-contain hidden sm:block" /> */}
+                      <img src={banleMobile} alt="Bán lẻ" className="w-[250px] h-auto object-contain sm:block" />
                     </a>
                   </td>
-                  <td className="sm:w-[182px] sm:h-[104px] align-middle text-center p-0 overflow-hidden transform transition-all duration-300 hover:scale-110 hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-lg">
+                  <td className="sm:w-[250px] h-auto align-middle text-center p-0 overflow-hidden transform transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-lg hover:bg-white/10">
                     <a href="https://zalo.me/s/886890990835804119?c=abbott-vu-lan-bigc" target="_blank" rel="noopener noreferrer">
-                      {/* <img src={bigcLogo} alt="BigC" className="w-full h-full object-contain hidden sm:block" /> */}
-                      <img src={bigcLogoDesktop} alt="BigC Desktop" className="w-full h-full object-contain sm:block" />
+                      {/* <img src={bigcLogo} alt="BigC" className="w-full h-auto object-contain hidden sm:block" /> */}
+                      <img src={centralMobile} alt="Central Retail" className="w-[250px] h-auto object-contain sm:block" />
                     </a>
                   </td>
-                  <td className="sm:w-[182px] sm:h-[104px] align-middle text-center p-0 overflow-hidden transform transition-all duration-300 hover:scale-110 hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-lg">
+                  <td className="sm:w-[250px] h-auto align-middle text-center p-0 overflow-hidden transform transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-lg hover:bg-white/10">
                     <a href="https://zalo.me/s/886890990835804119?c=abbott-vu-lan-coop" target="_blank" rel="noopener noreferrer">
-                      {/* <img src={coopLogo} alt="Co.op" className="w-full h-full object-contain hidden sm:block" /> */}
-                      <img src={coopLogoDesktop} alt="Co.op Desktop" className="w-full h-full object-contain sm:block" />
+                      {/* <img src={coopLogo} alt="Co.op" className="w-full h-auto object-contain hidden sm:block" /> */}
+                      <img src={coopMobile} alt="Co.opmart" className="w-[250px] h-auto object-contain sm:block" />
                     </a>
                   </td>
                 </tr>
-                <tr>
-                  <td colSpan="3" className="pt-2 justify-center align-top">
-                    {/* <span className="font-brandon font-bold text-xl border-2 border-blue-900 p-1 pl-2 pr-2 rounded-[999px] bg-[#fff] sm:text-sm text-[#154da1] shadow-[0_4px_8px_rgba(0,0,0,0.3),0_2px_4px_rgba(0,0,0,0.2)] transform hover:scale-105 transition-all duration-300 text-shadow-[0_1px_2px_rgba(0,0,0,0.1)]">CHỌN ĐIỂM BÁN BÊN DƯỚI ĐỂ THAM GIA CHƯƠNG TRÌNH</span> */}
-                    <img src={button} alt="button title" className='w-full h-[55px] object-contain sm:block'/>
-                  </td>
-              </tr>
+                
                 {/* <tr>
                   <td className="pt-0 align-top text-center">
                     <span className="text-xs font-medium text-[#315bb7] leading-tight -mt-1 block">Chuỗi siêu thị BigC, Go!, Tops Market</span>
