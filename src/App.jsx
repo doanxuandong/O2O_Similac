@@ -35,16 +35,6 @@ function App() {
           }}
         />
         
-        {/* Lion ở đầu mobile */}
-        {/* <div className="w-full flex justify-center z-10">
-          <img src={element} alt="Lion" className="w-full h-auto" />
-        </div> */}
-        
-        {/* text hướng dẫn */}
-        {/* <div className='flex items-center justify-center mt-2 px-4 z-10'>
-          <span className='text-[#891655] text-center text-sm font-medium bold'>Vui lòng bấm chọn điểm bán hàng bên dưới để tìm hiểu danh sách cửa hàng và thể lệ tham gia</span>
-        </div> */}
-        
         {/* 3 logo */}
         <div className='flex flex-col items-center w-full mt-[310px] px-4 z-10 space-y-3'>
           <a href="https://zalo.me/s/886890990835804119?c=abbott-gt" target="_blank" rel="noopener noreferrer" className="flex justify-center w-full">
@@ -60,47 +50,7 @@ function App() {
           </a>
         </div>
         
-        {/* COV dưới lion */}
-        {/* <div className="w-full flex justify-center z-10">
-          <img src={COV} alt="COV" className="w-[95%] h-auto" />
-        </div> */}
-        
-        {/* Table 3 ô logo - MOBILE */}
-        {/* <div className="w-full flex justify-center z-10">
-          <table className="bg-transparent border-separate border-spacing-4">
-            <tbody>
-              <tr>
-                <td colSpan="3" className="pb-0 text-center">
-                  <span className="font-bold text-[10px] sm:text-2xl border-2 border-blue-900 p-1 pl-2 pr-2 rounded-[999px] bg-[#fff] text-[#154da1]">CHỌN ĐIỂM BÁN BÊN DƯỚI ĐỂ THAM GIA CHƯƠNG TRÌNH</span>
-                </td>
-              </tr>
-              <tr>
-                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-24 h-24 sm:w-[80px] sm:h-[80px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#fff]">
-                  <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer">
-                    <img src={bigcLogo} alt="BigC" className="w-full h-full object-contain" />
-                  </a>
-                </td>
-                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-24 h-24 sm:w-[80px] sm:h-[80px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#fff]">
-                  <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer">
-                    <img src={coopLogo} alt="Co.op" className="w-full h-full object-contain" />
-                  </a>
-                </td>
-                <td className="bg-gradient-to-br from-[#fffbe7] to-[#f7e09e] border-2 border-[#f7c948] rounded-xl shadow-lg w-24 h-24 sm:w-[80px] sm:h-[80px] align-middle text-center p-0 overflow-hidden transform transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_40px_#fff]">
-                  <a href="https://zalo.me/s/886890990835804119/" target="_blank" rel="noopener noreferrer">
-                    <img src={gtLogo} alt="GT" className="w-full h-full object-contain" />
-                  </a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div> */}
-        
-        {/* Mokup mobile */}
-        {/* <div className="w-full flex justify-center z-10 mt-auto">
-          <img src={mokup} alt="Mokup" className="w-[50%] h-auto" />
-        </div> */}
-        
-         {/* Hoa hồng góc trái dưới mobile */}
+         {/* Hoa hồng */}
          <div className="absolute bottom-0 left-0 z-0">
            <img src={rose} alt="Rose" className="w-200 h-auto opacity-80" />
          </div>
@@ -111,6 +61,7 @@ function App() {
          </div>
       </div>
       <div className="relative w-full h-full">
+        {/*------------------------*/}
         {/* Desktop */}
         <img
           src={bgr}
@@ -125,41 +76,25 @@ function App() {
               <tr>
                   <td colSpan="3" className="pb-2 text-center">
                     <span className="font-brandon font-bold italic text-[17px] text-[#93175b] ">Vui lòng bấm chọn điểm bán hàng bên dưới để tìm hiểu danh sách cửa hàng và thể lệ tham gia</span>
-                    {/* <img src={hdtext} alt="hdtext" className="w-[300px] h-auto object-contain sm:block" /> */}
                   </td>
               </tr>
               <tr>
-                  <td className="sm:w-[250px] h-auto align-middle text-center p-0 overflow-hidden transform transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-lg hover:bg-white/10">
+                  <td className="sm:w-[270px] h-auto align-middle text-center p-0 overflow-hidden transform transition-all duration-300 hover:scale-110 hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-lg hover:bg-white/10">
                     <a href="https://zalo.me/s/886890990835804119?c=abbott-gt" target="_blank" rel="noopener noreferrer">
-                      {/* <img src={gtLogo} alt="GT" className="w-full h-auto object-contain hidden sm:block" /> */}
-                      <img src={banleMobile} alt="Bán lẻ" className="w-[250px] h-auto object-contain sm:block" />
+                      <img src={banleMobile} alt="Bán lẻ" className="w-[270px] h-auto object-contain sm:block" />
                     </a>
                   </td>
-                  <td className="sm:w-[250px] h-auto align-middle text-center p-0 overflow-hidden transform transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-lg hover:bg-white/10">
+                  <td className="sm:w-[270px] h-auto align-middle text-center p-0 overflow-hidden transform transition-all duration-300 hover:scale-110 hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-lg hover:bg-white/10">
                     <a href="https://zalo.me/s/886890990835804119?c=abbott-vu-lan-bigc" target="_blank" rel="noopener noreferrer">
-                      {/* <img src={bigcLogo} alt="BigC" className="w-full h-auto object-contain hidden sm:block" /> */}
-                      <img src={centralMobile} alt="Central Retail" className="w-[250px] h-auto object-contain sm:block" />
+                      <img src={centralMobile} alt="Central Retail" className="w-[270px] h-auto object-contain sm:block" />
                     </a>
                   </td>
-                  <td className="sm:w-[250px] h-auto align-middle text-center p-0 overflow-hidden transform transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-lg hover:bg-white/10">
+                  <td className="sm:w-[270px] h-auto align-middle text-center p-0 overflow-hidden transform transition-all duration-300 hover:scale-110 hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-lg hover:bg-white/10">
                     <a href="https://zalo.me/s/886890990835804119?c=abbott-vu-lan-coop" target="_blank" rel="noopener noreferrer">
-                      {/* <img src={coopLogo} alt="Co.op" className="w-full h-auto object-contain hidden sm:block" /> */}
-                      <img src={coopMobile} alt="Co.opmart" className="w-[250px] h-auto object-contain sm:block" />
+                      <img src={coopMobile} alt="Co.opmart" className="w-[270px] h-auto object-contain sm:block" />
                     </a>
                   </td>
                 </tr>
-                
-                {/* <tr>
-                  <td className="pt-0 align-top text-center">
-                    <span className="text-xs font-medium text-[#315bb7] leading-tight -mt-1 block">Chuỗi siêu thị BigC, Go!, Tops Market</span>
-                  </td>
-                  <td className="pt-0 align-top text-center">
-                    <span className="text-xs font-medium text-[#315bb7] leading-tight -mt-1 block">Chuỗi siêu thị Co.op, Co.op Extra, Co.op Food, Finelife</span>
-                  </td>
-                  <td className="pt-0 align-top text-center">
-                    <span className="text-xs font-medium text-[#315bb7] leading-tight -mt-1 block">Hệ thống cửa hàng <br></br> bán lẻ</span>
-                  </td>
-                </tr> */}
             </tbody>
           </table>
         </div>
