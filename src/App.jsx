@@ -119,12 +119,12 @@ function App() {
         />
         
         {/* Table 3 ô logo - DESKTOP */}
-        <div className="relative w-full flex justify-center sm:absolute sm:left-[69%] sm:-translate-x-1/2 sm:bottom-[17%] sm:z-10 sm:mt-0">
+        <div className="relative w-full flex justify-center sm:absolute sm:left-[69%] sm:-translate-x-1/2 sm:bottom-[18%] sm:z-10 sm:mt-0">
           <table className="hidden sm:table bg-transparent border-separate border-spacing-0 sm:border-spacing-x-6 mt-0">
             <tbody>
               <tr>
                   <td colSpan="3" className="pb-2 text-center">
-                    <span className="font-brandon font-bold italic text-[13px] text-[#93175b] ">VUI LÒNG BẤM CHỌN ĐIỂM BÁN HÀNG BÊN DƯỚI ĐỂ TÌM HIỂU DANH SÁCH CỬA HÀNG VÀ THỂ LỆ THAM GIA</span>
+                    <span className="font-brandon font-bold italic text-[17px] text-[#93175b] ">Vui lòng bấm chọn điểm bán hàng bên dưới để tìm hiểu danh sách cửa hàng và thể lệ tham gia</span>
                     {/* <img src={hdtext} alt="hdtext" className="w-[300px] h-auto object-contain sm:block" /> */}
                   </td>
               </tr>
