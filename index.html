@@ -6,25 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vu Lan</title>
     
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-19EHY206N6"></script>
+    <!-- Custom Analytics - Google Sheets Tracking -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-19EHY206N6');
-      
-      console.log('🚀 Google Analytics script loaded');
-      console.log('📊 Measurement ID: G-19EHY206N6');
-      console.log('🌐 Current URL:', window.location.href);
-      
-      setTimeout(() => {
-        if (typeof window.gtag === 'function') {
-          console.log('✅ gtag function is available');
-        } else {
-          console.log('❌ gtag function is NOT available');
+      (function() {
+        console.log('🚀 Custom Analytics script loaded');
+        
+        const params = new URLSearchParams(window.location.search);
+        const source = params.get('utm_source') || 'direct';
+        const medium = params.get('utm_medium') || 'unknown';
+        const campaign = params.get('utm_campaign') || 'unknown';
+        const ua = navigator.userAgent;
+        const timestamp = new Date().toISOString();
+        const url = window.location.href;
+        const referrer = document.referrer || 'direct';
+
+        // Send initial page view data
+        const initialData = {
+          event_type: 'page_load',
+          page_title: 'O2O Similac Landing Page',
+          source: source,
+          medium: medium,
+          campaign: campaign,
+          ua: ua,
+          timestamp: timestamp,
+          url: url,
+          referrer: referrer,
+          device: getDeviceType(),
+          screen_resolution: `${window.screen.width}x${window.screen.height}`,
+          language: navigator.language
+        };
+
+        // Send to Google Sheets
+        fetch("https://script.google.com/macros/s/AKfycbxz6BMnRcLTNCx8nZrCLMA1iBpOf8GLWciUkWM6tBVDD6GuY1KuKNGYkeqNh3zJaquI/exec", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(initialData)
+        })
+        .then(response => {
+          if (response.ok) {
+            console.log('✅ Initial data sent to Google Sheets successfully');
+          } else {
+            console.error('❌ Failed to send initial data:', response.status);
+          }
+        })
+        .catch(err => {
+          console.error("❌ Error sending initial data:", err);
+        });
+
+        // Helper function để xác định loại thiết bị
+        function getDeviceType() {
+          const ua = navigator.userAgent;
+          if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+            return 'tablet';
+          }
+          if (/mobile|android|iphone|ipod|blackberry|opera mini|iemobile/i.test(ua)) {
+            return 'mobile';
+          }
+          return 'desktop';
         }
-      }, 2000);
+
+        console.log('📊 Tracking initialized with:', {
+          source: source,
+          medium: medium,
+          campaign: campaign,
+          device: getDeviceType(),
+          url: url
+        });
+      })();
     </script>
   </head>
   <body>

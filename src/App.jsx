@@ -15,13 +15,13 @@ import coopMobile from './Images/coop_mb.png'
 import banleMobile from './Images/gt_mb.png'
 import logoAbbott from './Images/logo_abott.png'
 import hdtext from './Images/instructiontext.png'
-import { trackPageView, trackLinkClick } from './Components/Analytics'
+import { initializeCustomAnalytics, trackLinkClick } from './Components/CustomAnalytics'
 import './App.css'
 
 function App() {
   useEffect(() => {
-    // Track page view khi component mount
-    trackPageView('O2O Similac Landing Page');
+    // Initialize custom analytics khi component mount
+    initializeCustomAnalytics();
   }, []);
 
   const handleLinkClick = (linkName, linkUrl) => {
