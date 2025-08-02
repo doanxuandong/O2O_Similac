@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vu Lan</title>
     
-    <!-- Custom Analytics - Google Sheets Tracking -->
     <script>
       (function() {
         console.log('🚀 Custom Analytics script loaded');
@@ -16,28 +15,16 @@
         const medium = params.get('utm_medium') || 'unknown';
         const campaign = params.get('utm_campaign') || 'unknown';
         const ua = navigator.userAgent;
-        const timestamp = new Date().toISOString();
-        const url = window.location.href;
-        const referrer = document.referrer || 'direct';
 
-        // Send initial page view data
         const initialData = {
-          event_type: 'page_load',
-          page_title: 'O2O Similac Landing Page',
           source: source,
           medium: medium,
           campaign: campaign,
-          ua: ua,
-          timestamp: timestamp,
-          url: url,
-          referrer: referrer,
-          device: getDeviceType(),
-          screen_resolution: `${window.screen.width}x${window.screen.height}`,
-          language: navigator.language
+          ua: ua
         };
 
         // Send to Google Sheets
-        fetch("https://script.google.com/macros/s/AKfycbxz6BMnRcLTNCx8nZrCLMA1iBpOf8GLWciUkWM6tBVDD6GuY1KuKNGYkeqNh3zJaquI/exec", {
+        fetch("https://script.google.com/macros/s/AKfycbz5iOOskqVFEgCZlE6N2GlehGPUE2bS4vXqbXdTkXMHKl-cjfnNraN4zdrzOOyoo44PbQ/exec", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
@@ -55,24 +42,11 @@
           console.error("❌ Error sending initial data:", err);
         });
 
-        // Helper function để xác định loại thiết bị
-        function getDeviceType() {
-          const ua = navigator.userAgent;
-          if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
-            return 'tablet';
-          }
-          if (/mobile|android|iphone|ipod|blackberry|opera mini|iemobile/i.test(ua)) {
-            return 'mobile';
-          }
-          return 'desktop';
-        }
-
         console.log('📊 Tracking initialized with:', {
           source: source,
           medium: medium,
           campaign: campaign,
-          device: getDeviceType(),
-          url: url
+          ua: ua
         });
       })();
     </script>
