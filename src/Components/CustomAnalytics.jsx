@@ -8,27 +8,25 @@ export const trackPageView = (pageTitle = 'Vu Lan') => {
   const campaign = params.get('utm_campaign') || 'unknown';
   const ua = navigator.userAgent;
 
-  // Sử dụng GET request thay vì POST để tránh CORS
   const logUrl = GOOGLE_SHEETS_URL
     + `?source=${encodeURIComponent(source)}`
     + `&medium=${encodeURIComponent(medium)}`
     + `&campaign=${encodeURIComponent(campaign)}`
     + `&ua=${encodeURIComponent(ua)}`;
 
-  // Gửi request ngầm
   fetch(logUrl)
     .then(response => {
       if (response.ok) {
-        console.log('✅ Data sent to Google Sheets successfully');
+        // console.log('✅ Data sent to Google Sheets successfully');
       } else {
-        console.error('❌ Failed to send data to Google Sheets:', response.status);
+        // console.error('❌ Failed to send data to Google Sheets:', response.status);
       }
     })
     .catch(err => {
-      console.error("❌ Error sending data to Google Sheets:", err);
+      // console.error("❌ Error sending data to Google Sheets:", err);
     });
 
-  console.log('📊 Custom Analytics - Page View:', { source, medium, campaign, ua });
+  // console.log('📊 Custom Analytics - Page View:', { source, medium, campaign, ua });
 };
 
 export const trackLinkClick = (linkName, linkUrl) => {
@@ -38,27 +36,25 @@ export const trackLinkClick = (linkName, linkUrl) => {
   const campaign = params.get('utm_campaign') || 'unknown';
   const ua = navigator.userAgent;
 
-  // Sử dụng GET request thay vì POST để tránh CORS
   const logUrl = GOOGLE_SHEETS_URL
     + `?source=${encodeURIComponent(source)}`
     + `&medium=${encodeURIComponent(medium)}`
     + `&campaign=${encodeURIComponent(campaign)}`
     + `&ua=${encodeURIComponent(ua)}`;
 
-  // Gửi request ngầm
   fetch(logUrl)
     .then(response => {
       if (response.ok) {
-        console.log('✅ Link click data sent to Google Sheets successfully');
+        // console.log('✅ Link click data sent to Google Sheets successfully');
       } else {
-        console.error('❌ Failed to send link click data:', response.status);
+        // console.error('❌ Failed to send link click data:', response.status);
       }
     })
     .catch(err => {
-      console.error("❌ Error sending link click data:", err);
+      // console.error("❌ Error sending link click data:", err);
     });
 
-  console.log('📊 Custom Analytics - Link Click:', { linkName, linkUrl, source, medium, campaign });
+  // console.log('📊 Custom Analytics - Link Click:', { linkName, linkUrl, source, medium, campaign });
 };
 
 export const trackButtonClick = (buttonName) => {
@@ -68,33 +64,30 @@ export const trackButtonClick = (buttonName) => {
   const campaign = params.get('utm_campaign') || 'unknown';
   const ua = navigator.userAgent;
 
-  // Sử dụng GET request thay vì POST để tránh CORS
   const logUrl = GOOGLE_SHEETS_URL
     + `?source=${encodeURIComponent(source)}`
     + `&medium=${encodeURIComponent(medium)}`
     + `&campaign=${encodeURIComponent(campaign)}`
     + `&ua=${encodeURIComponent(ua)}`;
 
-  // Gửi request ngầm
   fetch(logUrl)
     .then(response => {
       if (response.ok) {
-        console.log('✅ Button click data sent to Google Sheets successfully');
+        // console.log('✅ Button click data sent to Google Sheets successfully');
       } else {
-        console.error('❌ Failed to send button click data:', response.status);
+        // console.error('❌ Failed to send button click data:', response.status);
       }
     })
     .catch(err => {
-      console.error("❌ Error sending button click data:", err);
+      // console.error("❌ Error sending button click data:", err);
     });
 
-  console.log('📊 Custom Analytics - Button Click:', { buttonName, source, medium, campaign });
+  // console.log('📊 Custom Analytics - Button Click:', { buttonName, source, medium, campaign });
 };
 
-// Initialize tracking khi page load
 export const initializeCustomAnalytics = () => {
   // Track page view khi component mount
   trackPageView();
   
-  console.log('📊 Custom Analytics initialized');
+  // console.log('📊 Custom Analytics initialized');
 }; 

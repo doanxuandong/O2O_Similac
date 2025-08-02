@@ -11,7 +11,7 @@
     <!--
     <script>
       (function() {
-        console.log('🚀 Custom Analytics script loaded');
+        // console.log('🚀 Custom Analytics script loaded');
         
         const params = new URLSearchParams(window.location.search);
         const source = params.get('utm_source') || 'direct';
@@ -30,21 +30,21 @@
         fetch(logUrl)
           .then(response => {
             if (response.ok) {
-              console.log('✅ Initial data sent to Google Sheets successfully');
+              // console.log('✅ Initial data sent to Google Sheets successfully');
             } else {
-              console.error('❌ Failed to send initial data:', response.status);
+              // console.error('❌ Failed to send initial data:', response.status);
             }
           })
           .catch(err => {
-            console.error("❌ Error sending initial data:", err);
+            // console.error("❌ Error sending initial data:", err);
           });
 
-        console.log('📊 Tracking initialized with:', {
-          source: source,
-          medium: medium,
-          campaign: campaign,
-          ua: ua
-        });
+        // console.log('📊 Tracking initialized with:', {
+        //   source: source,
+        //   medium: medium,
+        //   campaign: campaign,
+        //   ua: ua
+        // });
       })();
     </script>
     -->
