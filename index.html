@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vu Lan</title>
     
+    <!-- Custom Analytics - Google Sheets Tracking -->
     <script>
       (function() {
         console.log('🚀 Custom Analytics script loaded');
@@ -16,30 +17,25 @@
         const campaign = params.get('utm_campaign') || 'unknown';
         const ua = navigator.userAgent;
 
-        const initialData = {
-          source: source,
-          medium: medium,
-          campaign: campaign,
-          ua: ua
-        };
+        // Sử dụng GET request thay vì POST để tránh CORS
+        const logUrl = "https://script.google.com/macros/s/AKfycbx390vmmwr9fTs-ka2XryKk-04Vd5rs_-lvXhKCa89A5cNRIWVUkzCSHKhUBX2E6g1s/exec"
+          + `?source=${encodeURIComponent(source)}`
+          + `&medium=${encodeURIComponent(medium)}`
+          + `&campaign=${encodeURIComponent(campaign)}`
+          + `&ua=${encodeURIComponent(ua)}`;
 
-        fetch("https://script.google.com/macros/s/AKfycbx390vmmwr9fTs-ka2XryKk-04Vd5rs_-lvXhKCa89A5cNRIWVUkzCSHKhUBX2E6g1s/exec", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify(initialData)
-        })
-        .then(response => {
-          if (response.ok) {
-            console.log('✅ Initial data sent to Google Sheets successfully');
-          } else {
-            console.error('❌ Failed to send initial data:', response.status);
-          }
-        })
-        .catch(err => {
-          console.error("❌ Error sending initial data:", err);
-        });
+        // Gửi request ngầm
+        fetch(logUrl)
+          .then(response => {
+            if (response.ok) {
+              console.log('✅ Initial data sent to Google Sheets successfully');
+            } else {
+              console.error('❌ Failed to send initial data:', response.status);
+            }
+          })
+          .catch(err => {
+            console.error("❌ Error sending initial data:", err);
+          });
 
         console.log('📊 Tracking initialized with:', {
           source: source,

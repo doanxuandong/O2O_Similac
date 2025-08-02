@@ -8,15 +8,27 @@ export const trackPageView = (pageTitle = 'Vu Lan') => {
   const campaign = params.get('utm_campaign') || 'unknown';
   const ua = navigator.userAgent;
 
-  const data = {
-    source: source,
-    medium: medium,
-    campaign: campaign,
-    ua: ua
-  };
+  // Sử dụng GET request thay vì POST để tránh CORS
+  const logUrl = GOOGLE_SHEETS_URL
+    + `?source=${encodeURIComponent(source)}`
+    + `&medium=${encodeURIComponent(medium)}`
+    + `&campaign=${encodeURIComponent(campaign)}`
+    + `&ua=${encodeURIComponent(ua)}`;
 
-  sendToGoogleSheets(data);
-  console.log('📊 Custom Analytics - Page View:', data);
+  // Gửi request ngầm
+  fetch(logUrl)
+    .then(response => {
+      if (response.ok) {
+        console.log('✅ Data sent to Google Sheets successfully');
+      } else {
+        console.error('❌ Failed to send data to Google Sheets:', response.status);
+      }
+    })
+    .catch(err => {
+      console.error("❌ Error sending data to Google Sheets:", err);
+    });
+
+  console.log('📊 Custom Analytics - Page View:', { source, medium, campaign, ua });
 };
 
 export const trackLinkClick = (linkName, linkUrl) => {
@@ -26,15 +38,27 @@ export const trackLinkClick = (linkName, linkUrl) => {
   const campaign = params.get('utm_campaign') || 'unknown';
   const ua = navigator.userAgent;
 
-  const data = {
-    source: source,
-    medium: medium,
-    campaign: campaign,
-    ua: ua
-  };
+  // Sử dụng GET request thay vì POST để tránh CORS
+  const logUrl = GOOGLE_SHEETS_URL
+    + `?source=${encodeURIComponent(source)}`
+    + `&medium=${encodeURIComponent(medium)}`
+    + `&campaign=${encodeURIComponent(campaign)}`
+    + `&ua=${encodeURIComponent(ua)}`;
 
-  sendToGoogleSheets(data);
-  console.log('📊 Custom Analytics - Link Click:', data);
+  // Gửi request ngầm
+  fetch(logUrl)
+    .then(response => {
+      if (response.ok) {
+        console.log('✅ Link click data sent to Google Sheets successfully');
+      } else {
+        console.error('❌ Failed to send link click data:', response.status);
+      }
+    })
+    .catch(err => {
+      console.error("❌ Error sending link click data:", err);
+    });
+
+  console.log('📊 Custom Analytics - Link Click:', { linkName, linkUrl, source, medium, campaign });
 };
 
 export const trackButtonClick = (buttonName) => {
@@ -44,36 +68,27 @@ export const trackButtonClick = (buttonName) => {
   const campaign = params.get('utm_campaign') || 'unknown';
   const ua = navigator.userAgent;
 
-  const data = {
-    source: source,
-    medium: medium,
-    campaign: campaign,
-    ua: ua
-  };
+  // Sử dụng GET request thay vì POST để tránh CORS
+  const logUrl = GOOGLE_SHEETS_URL
+    + `?source=${encodeURIComponent(source)}`
+    + `&medium=${encodeURIComponent(medium)}`
+    + `&campaign=${encodeURIComponent(campaign)}`
+    + `&ua=${encodeURIComponent(ua)}`;
 
-  sendToGoogleSheets(data);
-  console.log('📊 Custom Analytics - Button Click:', data);
-};
+  // Gửi request ngầm
+  fetch(logUrl)
+    .then(response => {
+      if (response.ok) {
+        console.log('✅ Button click data sent to Google Sheets successfully');
+      } else {
+        console.error('❌ Failed to send button click data:', response.status);
+      }
+    })
+    .catch(err => {
+      console.error("❌ Error sending button click data:", err);
+    });
 
-// Helper function để gửi data đến Google Sheets
-const sendToGoogleSheets = (data) => {
-  fetch(GOOGLE_SHEETS_URL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(data)
-  })
-  .then(response => {
-    if (response.ok) {
-      console.log('✅ Data sent to Google Sheets successfully');
-    } else {
-      console.error('❌ Failed to send data to Google Sheets:', response.status);
-    }
-  })
-  .catch(err => {
-    console.error("❌ Error sending data to Google Sheets:", err);
-  });
+  console.log('📊 Custom Analytics - Button Click:', { buttonName, source, medium, campaign });
 };
 
 // Initialize tracking khi page load
