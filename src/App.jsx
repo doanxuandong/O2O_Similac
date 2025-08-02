@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import bgr from './Images/KV_Promotion_Vulan_12.png'
 import bgrMobileJpg from './Images/bg.jpg'
 import bigcLogo from './Images/central.png'
@@ -15,9 +15,19 @@ import coopMobile from './Images/coop_mb.png'
 import banleMobile from './Images/gt_mb.png'
 import logoAbbott from './Images/logo_abott.png'
 import hdtext from './Images/instructiontext.png'
+import { trackPageView, trackLinkClick } from './Components/Analytics'
 import './App.css'
 
 function App() {
+  useEffect(() => {
+    // Track page view khi component mount
+    trackPageView('O2O Similac Landing Page');
+  }, []);
+
+  const handleLinkClick = (linkName, linkUrl) => {
+    trackLinkClick(linkName, linkUrl);
+  };
+
   return (
     <div
       className="fixed top-0 left-0 w-screen h-screen z-[-1] m-0 p-0 bg-gradient-to-b from-[#fffbe7] to-[#f7e09e]"
@@ -37,15 +47,33 @@ function App() {
         
         {/* 3 logo */}
         <div className='flex flex-col items-center w-full mt-[310px] px-4 z-10 space-y-3'>
-          <a href="https://zalo.me/s/886890990835804119?c=abbott-gt" target="_blank" rel="noopener noreferrer" className="flex justify-center w-full">
+          <a 
+            href="https://zalo.me/s/886890990835804119?c=abbott-gt" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="flex justify-center w-full"
+            onClick={() => handleLinkClick('Bán lẻ Mobile', 'https://zalo.me/s/886890990835804119?c=abbott-gt')}
+          >
             <img src={banleMobile} alt="Bán lẻ" className="w-[95%] h-[95%] rounded-lg" />
           </a>
 
-          <a href="https://zalo.me/s/886890990835804119?c=abbott-vu-lan-bigc" target="_blank" rel="noopener noreferrer" className="flex justify-center w-full">
+          <a 
+            href="https://zalo.me/s/886890990835804119?c=abbott-vu-lan-bigc" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="flex justify-center w-full"
+            onClick={() => handleLinkClick('Central Retail Mobile', 'https://zalo.me/s/886890990835804119?c=abbott-vu-lan-bigc')}
+          >
             <img src={centralMobile} alt="Central Retail" className="w-[95%] h-[95%] rounded-lg" />
           </a>
           
-          <a href="https://zalo.me/s/886890990835804119?c=abbott-vu-lan-coop" target="_blank" rel="noopener noreferrer" className="flex justify-center w-full">
+          <a 
+            href="https://zalo.me/s/886890990835804119?c=abbott-vu-lan-coop" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="flex justify-center w-full"
+            onClick={() => handleLinkClick('Co.opmart Mobile', 'https://zalo.me/s/886890990835804119?c=abbott-vu-lan-coop')}
+          >
             <img src={coopMobile} alt="Co.opmart" className="w-[95%] h-[95%] rounded-lg" />
           </a>
         </div>
@@ -80,17 +108,32 @@ function App() {
               </tr>
               <tr>
                   <td className="sm:w-[270px] h-auto align-middle text-center p-0 overflow-hidden transform transition-all duration-300 hover:scale-110 hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-lg hover:bg-white/10">
-                    <a href="https://zalo.me/s/886890990835804119?c=abbott-gt" target="_blank" rel="noopener noreferrer">
+                    <a 
+                      href="https://zalo.me/s/886890990835804119?c=abbott-gt" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      onClick={() => handleLinkClick('Bán lẻ Desktop', 'https://zalo.me/s/886890990835804119?c=abbott-gt')}
+                    >
                       <img src={banleMobile} alt="Bán lẻ" className="w-[270px] h-auto object-contain sm:block" />
                     </a>
                   </td>
                   <td className="sm:w-[270px] h-auto align-middle text-center p-0 overflow-hidden transform transition-all duration-300 hover:scale-110 hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-lg hover:bg-white/10">
-                    <a href="https://zalo.me/s/886890990835804119?c=abbott-vu-lan-bigc" target="_blank" rel="noopener noreferrer">
+                    <a 
+                      href="https://zalo.me/s/886890990835804119?c=abbott-vu-lan-bigc" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      onClick={() => handleLinkClick('Central Retail Desktop', 'https://zalo.me/s/886890990835804119?c=abbott-vu-lan-bigc')}
+                    >
                       <img src={centralMobile} alt="Central Retail" className="w-[270px] h-auto object-contain sm:block" />
                     </a>
                   </td>
                   <td className="sm:w-[270px] h-auto align-middle text-center p-0 overflow-hidden transform transition-all duration-300 hover:scale-110 hover:shadow-[0_0_30px_rgba(255,255,255,0.8)] rounded-lg hover:bg-white/10">
-                    <a href="https://zalo.me/s/886890990835804119?c=abbott-vu-lan-coop" target="_blank" rel="noopener noreferrer">
+                    <a 
+                      href="https://zalo.me/s/886890990835804119?c=abbott-vu-lan-coop" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      onClick={() => handleLinkClick('Co.opmart Desktop', 'https://zalo.me/s/886890990835804119?c=abbott-vu-lan-coop')}
+                    >
                       <img src={coopMobile} alt="Co.opmart" className="w-[270px] h-auto object-contain sm:block" />
                     </a>
                   </td>
