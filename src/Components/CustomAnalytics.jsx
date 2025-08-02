@@ -1,5 +1,5 @@
 // Custom Analytics component sử dụng Google Sheets
-const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycbwSizo04IEmoUk-LGwPK6F-b79dOQKSwPbOT4SG4WS85SK0caogDkDLQbpu4W12lZ2C/exec";
+const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycbwO_-Lb53a8N-E6jLIlpNqez_TWFsQlbiu3PC5Mu9qcu-n8kRJ91GOdOhhl1XjGV7AP/exec";
 
 export const trackPageView = (pageTitle = 'Vu Lan') => {
   const params = new URLSearchParams(window.location.search);
