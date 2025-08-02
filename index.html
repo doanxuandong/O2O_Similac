@@ -13,6 +13,18 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-19EHY206N6');
+      
+      console.log('🚀 Google Analytics script loaded');
+      console.log('📊 Measurement ID: G-19EHY206N6');
+      console.log('🌐 Current URL:', window.location.href);
+      
+      setTimeout(() => {
+        if (typeof window.gtag === 'function') {
+          console.log('✅ gtag function is available');
+        } else {
+          console.log('❌ gtag function is NOT available');
+        }
+      }, 2000);
     </script>
   </head>
   <body>
