@@ -1,5 +1,5 @@
-// Custom Analytics component sử dụng Google Sheets
-const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycbx390vmmwr9fTs-ka2XryKk-04Vd5rs_-lvXhKCa89A5cNRIWVUkzCSHKhUBX2E6g1s/exec";
+// App Script của Sheet
+const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycbw-jEwuWoh6ZWt2-Ec4kXkF2tCnejGrnzaLKCWrj8SAJsn-zwI3iUoT5HbQfJ6uqTyE/exec";
 
 export const trackPageView = (pageTitle = 'Vu Lan') => {
   const params = new URLSearchParams(window.location.search);
@@ -12,7 +12,8 @@ export const trackPageView = (pageTitle = 'Vu Lan') => {
     + `?source=${encodeURIComponent(source)}`
     + `&medium=${encodeURIComponent(medium)}`
     + `&campaign=${encodeURIComponent(campaign)}`
-    + `&ua=${encodeURIComponent(ua)}`;
+    + `&ua=${encodeURIComponent(ua)}`
+    + `&action=`; // Action trống cho page view
 
   fetch(logUrl)
     .then(response => {
@@ -40,7 +41,8 @@ export const trackLinkClick = (linkName, linkUrl) => {
     + `?source=${encodeURIComponent(source)}`
     + `&medium=${encodeURIComponent(medium)}`
     + `&campaign=${encodeURIComponent(campaign)}`
-    + `&ua=${encodeURIComponent(ua)}`;
+    + `&ua=${encodeURIComponent(ua)}`
+    + `&action=${encodeURIComponent(linkName)}`; // Thêm action cho button click
 
   fetch(logUrl)
     .then(response => {
@@ -57,6 +59,8 @@ export const trackLinkClick = (linkName, linkUrl) => {
   // console.log('📊 Custom Analytics - Link Click:', { linkName, linkUrl, source, medium, campaign });
 };
 
+// Commented out - không track button clicks
+/*
 export const trackButtonClick = (buttonName) => {
   const params = new URLSearchParams(window.location.search);
   const source = params.get('utm_source') || 'direct';
@@ -84,9 +88,9 @@ export const trackButtonClick = (buttonName) => {
 
   // console.log('📊 Custom Analytics - Button Click:', { buttonName, source, medium, campaign });
 };
+*/
 
 export const initializeCustomAnalytics = () => {
-  // Track page view khi component mount
   trackPageView();
   
   // console.log('📊 Custom Analytics initialized');
