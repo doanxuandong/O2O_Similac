@@ -1,5 +1,5 @@
 // App Script của Sheet
-const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycbw-jEwuWoh6ZWt2-Ec4kXkF2tCnejGrnzaLKCWrj8SAJsn-zwI3iUoT5HbQfJ6uqTyE/exec";
+const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycbzoBbqc2mqM9ntFv6CP271BpSzKMQvDxImxqN9RDesujomzOqHh5I_1pcHGQHsIlQvI/exec";
 
 export const trackPageView = (pageTitle = 'Vu Lan') => {
   const params = new URLSearchParams(window.location.search);
@@ -13,7 +13,7 @@ export const trackPageView = (pageTitle = 'Vu Lan') => {
     + `&medium=${encodeURIComponent(medium)}`
     + `&campaign=${encodeURIComponent(campaign)}`
     + `&ua=${encodeURIComponent(ua)}`
-    + `&action=`; // Action trống cho page view
+    + `&action=`; 
 
   fetch(logUrl)
     .then(response => {
