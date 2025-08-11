@@ -1,0 +1,20 @@
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: Google-InspectionTool
+Allow: /
+
+User-agent: *
+Disallow:
+
+# Optional: provide a sitemap if you have one
+# Sitemap: https://vulan.tuanlevang.com/sitemap.xml 
